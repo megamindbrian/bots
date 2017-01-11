@@ -6,7 +6,7 @@ const app     = express();
 const selenium = require('selenium-standalone');
 var lastLaunch = new Date();
 var myChild = null;
-
+   
 app.get('/start', function (req, res) {
     if(typeof(req.query['time']) == 'undefined' || new Date('@' + req.query['time']) < lastLaunch) {
         if(myChild != null) {
