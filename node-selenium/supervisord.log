@@ -1,0 +1,1482 @@
+2016-11-01 08:33:03,275 CRIT Supervisor running as root (no user in config file)
+2016-11-01 08:33:03,277 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 08:33:03,282 INFO supervisord started with pid 1
+2016-11-01 08:33:04,285 INFO spawnerr: can't find command '/usr/local/bin/npm'
+2016-11-01 08:33:05,287 INFO spawnerr: can't find command '/usr/local/bin/npm'
+2016-11-01 08:33:07,291 INFO spawnerr: can't find command '/usr/local/bin/npm'
+2016-11-01 08:33:10,297 INFO spawnerr: can't find command '/usr/local/bin/npm'
+2016-11-01 08:33:10,298 INFO gave up: npm entered FATAL state, too many start retries too quickly
+2016-11-01 08:40:49,849 WARN received SIGTERM indicating exit request
+2016-11-01 08:41:57,259 CRIT Supervisor running as root (no user in config file)
+2016-11-01 08:41:57,260 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 08:41:57,267 INFO supervisord started with pid 1
+2016-11-01 08:41:58,269 INFO spawned: 'npm' with pid 9
+2016-11-01 08:41:59,684 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 08:44:45,842 INFO exited: npm (exit status 1; not expected)
+2016-11-01 08:44:46,846 INFO spawned: 'npm' with pid 36
+2016-11-01 08:44:48,223 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 08:45:36,082 INFO exited: npm (exit status 1; not expected)
+2016-11-01 08:45:37,089 INFO spawned: 'npm' with pid 54
+2016-11-01 08:45:38,480 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 12:40:15,270 INFO exited: npm (exit status 1; not expected)
+2016-11-01 12:40:16,274 INFO spawned: 'npm' with pid 77
+2016-11-01 12:40:17,655 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 12:42:07,641 INFO exited: npm (exit status 1; not expected)
+2016-11-01 12:42:08,646 INFO spawned: 'npm' with pid 112
+2016-11-01 12:42:10,073 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:17,660 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:18,663 INFO spawned: 'npm' with pid 159
+2016-11-01 13:15:20,094 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:20,458 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:21,465 INFO spawned: 'npm' with pid 174
+2016-11-01 13:15:22,828 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:23,157 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:24,165 INFO spawned: 'npm' with pid 189
+2016-11-01 13:15:25,533 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:26,138 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:27,142 INFO spawned: 'npm' with pid 209
+2016-11-01 13:15:28,507 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:28,848 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:29,854 INFO spawned: 'npm' with pid 224
+2016-11-01 13:15:31,224 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:31,522 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:32,530 INFO spawned: 'npm' with pid 239
+2016-11-01 13:15:33,887 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:34,268 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:35,271 INFO spawned: 'npm' with pid 254
+2016-11-01 13:15:36,626 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:37,017 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:38,023 INFO spawned: 'npm' with pid 269
+2016-11-01 13:15:39,375 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:39,787 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:40,791 INFO spawned: 'npm' with pid 284
+2016-11-01 13:15:42,140 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:42,486 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:43,494 INFO spawned: 'npm' with pid 299
+2016-11-01 13:15:44,863 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:45,303 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:46,308 INFO spawned: 'npm' with pid 314
+2016-11-01 13:15:47,663 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:48,083 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:49,090 INFO spawned: 'npm' with pid 329
+2016-11-01 13:15:50,466 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:51,038 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:52,041 INFO spawned: 'npm' with pid 344
+2016-11-01 13:15:53,404 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:53,849 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:54,854 INFO spawned: 'npm' with pid 359
+2016-11-01 13:15:56,207 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:56,711 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:15:57,718 INFO spawned: 'npm' with pid 374
+2016-11-01 13:15:59,085 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:15:59,610 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:00,615 INFO spawned: 'npm' with pid 390
+2016-11-01 13:16:01,980 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:02,354 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:03,358 INFO spawned: 'npm' with pid 405
+2016-11-01 13:16:04,742 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:05,192 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:06,197 INFO spawned: 'npm' with pid 420
+2016-11-01 13:16:07,555 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:07,952 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:08,959 INFO spawned: 'npm' with pid 435
+2016-11-01 13:16:10,315 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:10,752 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:11,759 INFO spawned: 'npm' with pid 450
+2016-11-01 13:16:13,129 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:13,506 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:14,513 INFO spawned: 'npm' with pid 465
+2016-11-01 13:16:15,884 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:16,375 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:17,382 INFO spawned: 'npm' with pid 480
+2016-11-01 13:16:18,741 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:19,187 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:20,190 INFO spawned: 'npm' with pid 495
+2016-11-01 13:16:21,566 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:21,923 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:22,930 INFO spawned: 'npm' with pid 510
+2016-11-01 13:16:24,286 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:24,766 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:25,770 INFO spawned: 'npm' with pid 525
+2016-11-01 13:16:27,133 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:27,533 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:28,539 INFO spawned: 'npm' with pid 540
+2016-11-01 13:16:29,891 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:30,314 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:31,318 INFO spawned: 'npm' with pid 555
+2016-11-01 13:16:32,671 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:32,984 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:33,988 INFO spawned: 'npm' with pid 570
+2016-11-01 13:16:35,352 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:35,764 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:36,771 INFO spawned: 'npm' with pid 585
+2016-11-01 13:16:38,134 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:38,493 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:39,500 INFO spawned: 'npm' with pid 600
+2016-11-01 13:16:40,859 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:41,315 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:42,321 INFO spawned: 'npm' with pid 615
+2016-11-01 13:16:43,685 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:44,104 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:45,111 INFO spawned: 'npm' with pid 630
+2016-11-01 13:16:46,476 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:46,822 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:47,828 INFO spawned: 'npm' with pid 645
+2016-11-01 13:16:49,230 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:49,667 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:50,672 INFO spawned: 'npm' with pid 660
+2016-11-01 13:16:52,043 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:52,669 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:53,673 INFO spawned: 'npm' with pid 675
+2016-11-01 13:16:55,036 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:55,525 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:56,529 INFO spawned: 'npm' with pid 690
+2016-11-01 13:16:57,883 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:16:58,410 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:16:59,414 INFO spawned: 'npm' with pid 705
+2016-11-01 13:17:00,766 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:01,480 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:02,486 INFO spawned: 'npm' with pid 720
+2016-11-01 13:17:03,885 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:04,606 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:05,614 INFO spawned: 'npm' with pid 735
+2016-11-01 13:17:06,981 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:07,505 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:08,510 INFO spawned: 'npm' with pid 750
+2016-11-01 13:17:09,878 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:10,363 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:11,371 INFO spawned: 'npm' with pid 765
+2016-11-01 13:17:12,775 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:13,194 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:14,200 INFO spawned: 'npm' with pid 780
+2016-11-01 13:17:15,560 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:16,049 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:17,054 INFO spawned: 'npm' with pid 795
+2016-11-01 13:17:18,401 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:18,923 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:19,928 INFO spawned: 'npm' with pid 810
+2016-11-01 13:17:21,291 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:21,651 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:22,658 INFO spawned: 'npm' with pid 825
+2016-11-01 13:17:24,019 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:24,438 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:25,443 INFO spawned: 'npm' with pid 840
+2016-11-01 13:17:26,808 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:27,294 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:28,298 INFO spawned: 'npm' with pid 855
+2016-11-01 13:17:29,675 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:29,933 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:30,937 INFO spawned: 'npm' with pid 870
+2016-11-01 13:17:32,322 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:32,757 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:33,761 INFO spawned: 'npm' with pid 885
+2016-11-01 13:17:35,127 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:35,520 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:36,525 INFO spawned: 'npm' with pid 900
+2016-11-01 13:17:37,890 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:38,490 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:39,497 INFO spawned: 'npm' with pid 915
+2016-11-01 13:17:40,867 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:41,456 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:42,462 INFO spawned: 'npm' with pid 930
+2016-11-01 13:17:43,842 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:44,416 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:45,420 INFO spawned: 'npm' with pid 945
+2016-11-01 13:17:46,823 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:47,555 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:48,563 INFO spawned: 'npm' with pid 960
+2016-11-01 13:17:49,920 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:50,636 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:51,643 INFO spawned: 'npm' with pid 975
+2016-11-01 13:17:52,995 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:53,524 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:54,529 INFO spawned: 'npm' with pid 990
+2016-11-01 13:17:55,883 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:56,469 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:17:57,472 INFO spawned: 'npm' with pid 1005
+2016-11-01 13:17:58,828 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:17:59,281 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:00,286 INFO spawned: 'npm' with pid 1021
+2016-11-01 13:18:01,648 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:02,030 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:03,034 INFO spawned: 'npm' with pid 1036
+2016-11-01 13:18:04,397 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:04,726 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:05,730 INFO spawned: 'npm' with pid 1051
+2016-11-01 13:18:07,097 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:07,547 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:08,550 INFO spawned: 'npm' with pid 1066
+2016-11-01 13:18:09,915 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:10,289 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:11,293 INFO spawned: 'npm' with pid 1081
+2016-11-01 13:18:12,654 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:13,040 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:14,047 INFO spawned: 'npm' with pid 1096
+2016-11-01 13:18:15,441 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:15,880 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:16,884 INFO spawned: 'npm' with pid 1111
+2016-11-01 13:18:18,244 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:18,687 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:19,694 INFO spawned: 'npm' with pid 1126
+2016-11-01 13:18:21,061 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:21,509 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:22,516 INFO spawned: 'npm' with pid 1141
+2016-11-01 13:18:23,868 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:24,389 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:25,394 INFO spawned: 'npm' with pid 1156
+2016-11-01 13:18:26,757 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:27,411 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:28,419 INFO spawned: 'npm' with pid 1171
+2016-11-01 13:18:29,780 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:30,353 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:31,358 INFO spawned: 'npm' with pid 1186
+2016-11-01 13:18:32,711 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:33,070 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:34,073 INFO spawned: 'npm' with pid 1201
+2016-11-01 13:18:35,435 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:35,784 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:36,791 INFO spawned: 'npm' with pid 1216
+2016-11-01 13:18:38,153 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:38,610 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:39,616 INFO spawned: 'npm' with pid 1231
+2016-11-01 13:18:40,974 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:41,507 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:42,512 INFO spawned: 'npm' with pid 1246
+2016-11-01 13:18:43,868 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:44,419 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:45,426 INFO spawned: 'npm' with pid 1261
+2016-11-01 13:18:46,791 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:47,314 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:48,319 INFO spawned: 'npm' with pid 1276
+2016-11-01 13:18:49,707 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:50,159 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:51,167 INFO spawned: 'npm' with pid 1291
+2016-11-01 13:18:52,530 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:52,879 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:53,882 INFO spawned: 'npm' with pid 1306
+2016-11-01 13:18:55,249 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:55,695 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:56,699 INFO spawned: 'npm' with pid 1321
+2016-11-01 13:18:58,098 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:18:58,703 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:18:59,708 INFO spawned: 'npm' with pid 1336
+2016-11-01 13:19:01,069 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:01,408 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:02,415 INFO spawned: 'npm' with pid 1351
+2016-11-01 13:19:03,777 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:04,195 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:05,201 INFO spawned: 'npm' with pid 1366
+2016-11-01 13:19:06,561 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:07,016 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:08,024 INFO spawned: 'npm' with pid 1381
+2016-11-01 13:19:09,392 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:09,902 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:10,908 INFO spawned: 'npm' with pid 1396
+2016-11-01 13:19:12,272 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:13,421 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:14,428 INFO spawned: 'npm' with pid 1411
+2016-11-01 13:19:15,800 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:16,292 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:17,296 INFO spawned: 'npm' with pid 1426
+2016-11-01 13:19:18,657 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:19,222 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:20,228 INFO spawned: 'npm' with pid 1441
+2016-11-01 13:19:21,583 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:22,123 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:23,126 INFO spawned: 'npm' with pid 1456
+2016-11-01 13:19:24,482 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:24,878 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:25,882 INFO spawned: 'npm' with pid 1471
+2016-11-01 13:19:27,254 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:27,791 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:28,797 INFO spawned: 'npm' with pid 1486
+2016-11-01 13:19:30,155 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:30,725 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:31,729 INFO spawned: 'npm' with pid 1501
+2016-11-01 13:19:33,083 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:33,670 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:34,676 INFO spawned: 'npm' with pid 1516
+2016-11-01 13:19:36,039 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:36,512 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:37,520 INFO spawned: 'npm' with pid 1531
+2016-11-01 13:19:38,874 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:39,403 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:40,409 INFO spawned: 'npm' with pid 1546
+2016-11-01 13:19:41,801 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:42,377 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:43,383 INFO spawned: 'npm' with pid 1561
+2016-11-01 13:19:44,743 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:45,292 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:46,296 INFO spawned: 'npm' with pid 1576
+2016-11-01 13:19:47,651 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:48,183 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:49,188 INFO spawned: 'npm' with pid 1591
+2016-11-01 13:19:50,543 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:50,952 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:51,959 INFO spawned: 'npm' with pid 1606
+2016-11-01 13:19:53,336 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:53,901 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:54,904 INFO spawned: 'npm' with pid 1621
+2016-11-01 13:19:56,278 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:56,706 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:19:57,712 INFO spawned: 'npm' with pid 1636
+2016-11-01 13:19:59,070 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:19:59,435 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:00,442 INFO spawned: 'npm' with pid 1651
+2016-11-01 13:20:01,804 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:02,267 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:03,272 INFO spawned: 'npm' with pid 1666
+2016-11-01 13:20:04,621 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:05,033 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:06,038 INFO spawned: 'npm' with pid 1681
+2016-11-01 13:20:07,389 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:07,907 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:08,912 INFO spawned: 'npm' with pid 1696
+2016-11-01 13:20:10,277 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:10,707 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:11,714 INFO spawned: 'npm' with pid 1711
+2016-11-01 13:20:13,073 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:13,605 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:14,612 INFO spawned: 'npm' with pid 1726
+2016-11-01 13:20:15,986 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:16,429 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:17,437 INFO spawned: 'npm' with pid 1741
+2016-11-01 13:20:18,845 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:19,387 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:20,395 INFO spawned: 'npm' with pid 1756
+2016-11-01 13:20:21,749 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:22,146 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:23,152 INFO spawned: 'npm' with pid 1771
+2016-11-01 13:20:24,523 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:25,023 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:26,028 INFO spawned: 'npm' with pid 1786
+2016-11-01 13:20:27,394 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:27,892 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:28,897 INFO spawned: 'npm' with pid 1801
+2016-11-01 13:20:30,268 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:30,968 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:31,973 INFO spawned: 'npm' with pid 1816
+2016-11-01 13:20:33,327 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:33,774 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:34,779 INFO spawned: 'npm' with pid 1831
+2016-11-01 13:20:36,157 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:36,733 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:37,737 INFO spawned: 'npm' with pid 1846
+2016-11-01 13:20:39,100 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:42,989 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:43,993 INFO spawned: 'npm' with pid 1870
+2016-11-01 13:20:45,393 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:46,083 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:47,086 INFO spawned: 'npm' with pid 1885
+2016-11-01 13:20:48,448 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:48,872 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:49,876 INFO spawned: 'npm' with pid 1905
+2016-11-01 13:20:51,239 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:52,148 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:53,151 INFO spawned: 'npm' with pid 1920
+2016-11-01 13:20:54,571 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:55,177 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:56,184 INFO spawned: 'npm' with pid 1935
+2016-11-01 13:20:57,542 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:20:57,880 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:20:58,887 INFO spawned: 'npm' with pid 1950
+2016-11-01 13:21:00,253 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:00,807 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:01,810 INFO spawned: 'npm' with pid 1965
+2016-11-01 13:21:03,179 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:03,870 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:04,874 INFO spawned: 'npm' with pid 1980
+2016-11-01 13:21:06,242 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:06,793 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:07,797 INFO spawned: 'npm' with pid 1995
+2016-11-01 13:21:09,153 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:09,600 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:10,603 INFO spawned: 'npm' with pid 2010
+2016-11-01 13:21:11,955 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:12,332 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:13,336 INFO spawned: 'npm' with pid 2025
+2016-11-01 13:21:14,690 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:15,268 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:16,271 INFO spawned: 'npm' with pid 2040
+2016-11-01 13:21:17,669 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:18,158 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:19,161 INFO spawned: 'npm' with pid 2055
+2016-11-01 13:21:20,532 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:21,010 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:22,017 INFO spawned: 'npm' with pid 2070
+2016-11-01 13:21:23,397 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:23,942 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:24,948 INFO spawned: 'npm' with pid 2085
+2016-11-01 13:21:26,328 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:26,973 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:27,976 INFO spawned: 'npm' with pid 2101
+2016-11-01 13:21:29,358 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:45,605 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:46,608 INFO spawned: 'npm' with pid 2125
+2016-11-01 13:21:48,030 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:48,747 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:49,751 INFO spawned: 'npm' with pid 2140
+2016-11-01 13:21:51,114 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:21:51,764 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:21:52,771 INFO spawned: 'npm' with pid 2160
+2016-11-01 13:21:54,134 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:03,946 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:04,948 INFO spawned: 'npm' with pid 2184
+2016-11-01 13:22:06,324 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:06,844 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:07,847 INFO spawned: 'npm' with pid 2224
+2016-11-01 13:22:09,246 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:09,664 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:10,671 INFO spawned: 'npm' with pid 2240
+2016-11-01 13:22:12,027 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:12,359 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:13,365 INFO spawned: 'npm' with pid 2255
+2016-11-01 13:22:14,721 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:15,137 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:16,141 INFO spawned: 'npm' with pid 2296
+2016-11-01 13:22:17,509 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:17,958 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:18,961 INFO spawned: 'npm' with pid 2318
+2016-11-01 13:22:20,308 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:20,651 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:21,658 INFO spawned: 'npm' with pid 2333
+2016-11-01 13:22:23,020 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:23,340 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:24,343 INFO spawned: 'npm' with pid 2348
+2016-11-01 13:22:25,694 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:26,045 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:27,049 INFO spawned: 'npm' with pid 2363
+2016-11-01 13:22:28,411 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:28,824 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:29,828 INFO spawned: 'npm' with pid 2378
+2016-11-01 13:22:31,188 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:31,681 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:32,684 INFO spawned: 'npm' with pid 2393
+2016-11-01 13:22:34,051 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:34,536 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:35,539 INFO spawned: 'npm' with pid 2408
+2016-11-01 13:22:36,903 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:40,136 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:41,140 INFO spawned: 'npm' with pid 2437
+2016-11-01 13:22:42,526 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:42,957 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:43,962 INFO spawned: 'npm' with pid 2452
+2016-11-01 13:22:45,325 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:45,742 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:46,748 INFO spawned: 'npm' with pid 2468
+2016-11-01 13:22:48,111 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:48,501 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:49,507 INFO spawned: 'npm' with pid 2483
+2016-11-01 13:22:50,862 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:51,479 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:52,487 INFO spawned: 'npm' with pid 2498
+2016-11-01 13:22:53,834 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:54,334 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:55,338 INFO spawned: 'npm' with pid 2513
+2016-11-01 13:22:56,714 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:22:57,276 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:22:58,282 INFO spawned: 'npm' with pid 2528
+2016-11-01 13:22:59,661 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:00,627 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:01,631 INFO spawned: 'npm' with pid 2552
+2016-11-01 13:23:03,022 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:03,530 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:04,534 INFO spawned: 'npm' with pid 2572
+2016-11-01 13:23:05,898 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:06,784 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:07,788 INFO spawned: 'npm' with pid 2616
+2016-11-01 13:23:09,157 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:09,589 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:10,594 INFO spawned: 'npm' with pid 2631
+2016-11-01 13:23:11,951 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:12,473 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:13,476 INFO spawned: 'npm' with pid 2646
+2016-11-01 13:23:14,830 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:15,268 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:16,271 INFO spawned: 'npm' with pid 2661
+2016-11-01 13:23:17,627 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:18,159 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:19,162 INFO spawned: 'npm' with pid 2676
+2016-11-01 13:23:20,524 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:21,078 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:22,084 INFO spawned: 'npm' with pid 2691
+2016-11-01 13:23:23,444 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:23,856 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:24,861 INFO spawned: 'npm' with pid 2706
+2016-11-01 13:23:26,210 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:26,598 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:27,602 INFO spawned: 'npm' with pid 2721
+2016-11-01 13:23:28,969 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:29,425 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:30,428 INFO spawned: 'npm' with pid 2736
+2016-11-01 13:23:31,790 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:32,397 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:33,401 INFO spawned: 'npm' with pid 2751
+2016-11-01 13:23:34,773 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:35,273 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:36,280 INFO spawned: 'npm' with pid 2766
+2016-11-01 13:23:37,650 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:38,173 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:39,176 INFO spawned: 'npm' with pid 2781
+2016-11-01 13:23:40,530 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:41,080 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:42,087 INFO spawned: 'npm' with pid 2796
+2016-11-01 13:23:43,481 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:44,119 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:45,122 INFO spawned: 'npm' with pid 2811
+2016-11-01 13:23:46,488 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:46,856 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:47,861 INFO spawned: 'npm' with pid 2826
+2016-11-01 13:23:49,226 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:49,753 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:50,757 INFO spawned: 'npm' with pid 2841
+2016-11-01 13:23:52,120 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:52,512 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:53,514 INFO spawned: 'npm' with pid 2856
+2016-11-01 13:23:54,868 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:55,527 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:56,530 INFO spawned: 'npm' with pid 2871
+2016-11-01 13:23:57,889 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:23:58,281 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:23:59,286 INFO spawned: 'npm' with pid 2886
+2016-11-01 13:24:00,645 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:01,200 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:02,205 INFO spawned: 'npm' with pid 2901
+2016-11-01 13:24:03,575 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:04,089 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:05,095 INFO spawned: 'npm' with pid 2916
+2016-11-01 13:24:06,475 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:06,991 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:07,997 INFO spawned: 'npm' with pid 2931
+2016-11-01 13:24:09,349 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:09,815 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:10,822 INFO spawned: 'npm' with pid 2946
+2016-11-01 13:24:12,175 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:12,512 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:13,519 INFO spawned: 'npm' with pid 2961
+2016-11-01 13:24:14,869 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:15,169 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:16,172 INFO spawned: 'npm' with pid 2976
+2016-11-01 13:24:17,539 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:18,019 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:19,024 INFO spawned: 'npm' with pid 2991
+2016-11-01 13:24:20,384 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:20,914 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:21,919 INFO spawned: 'npm' with pid 3006
+2016-11-01 13:24:23,290 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:23,728 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:24,731 INFO spawned: 'npm' with pid 3021
+2016-11-01 13:24:26,085 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:26,397 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:27,403 INFO spawned: 'npm' with pid 3036
+2016-11-01 13:24:28,759 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:29,197 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:30,202 INFO spawned: 'npm' with pid 3051
+2016-11-01 13:24:31,556 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:32,017 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:33,021 INFO spawned: 'npm' with pid 3066
+2016-11-01 13:24:34,380 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:34,890 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:35,895 INFO spawned: 'npm' with pid 3081
+2016-11-01 13:24:37,239 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:37,805 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:38,809 INFO spawned: 'npm' with pid 3096
+2016-11-01 13:24:40,169 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:40,588 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:41,595 INFO spawned: 'npm' with pid 3111
+2016-11-01 13:24:42,942 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:43,395 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:44,403 INFO spawned: 'npm' with pid 3126
+2016-11-01 13:24:45,763 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:46,085 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:47,090 INFO spawned: 'npm' with pid 3141
+2016-11-01 13:24:48,449 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:48,804 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:49,809 INFO spawned: 'npm' with pid 3156
+2016-11-01 13:24:51,161 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:51,612 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:52,615 INFO spawned: 'npm' with pid 3171
+2016-11-01 13:24:53,978 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:54,285 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:55,289 INFO spawned: 'npm' with pid 3186
+2016-11-01 13:24:56,643 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:56,990 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:24:57,993 INFO spawned: 'npm' with pid 3201
+2016-11-01 13:24:59,350 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:24:59,754 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:00,757 INFO spawned: 'npm' with pid 3216
+2016-11-01 13:25:02,109 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:02,491 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:03,494 INFO spawned: 'npm' with pid 3231
+2016-11-01 13:25:04,846 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:05,490 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:06,494 INFO spawned: 'npm' with pid 3279
+2016-11-01 13:25:07,855 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:08,387 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:09,390 INFO spawned: 'npm' with pid 3296
+2016-11-01 13:25:10,740 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:11,200 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:12,208 INFO spawned: 'npm' with pid 3311
+2016-11-01 13:25:13,557 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:14,035 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:15,042 INFO spawned: 'npm' with pid 3326
+2016-11-01 13:25:16,396 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:16,865 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:17,869 INFO spawned: 'npm' with pid 3341
+2016-11-01 13:25:19,226 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:19,652 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:20,655 INFO spawned: 'npm' with pid 3356
+2016-11-01 13:25:22,015 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:22,408 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:23,413 INFO spawned: 'npm' with pid 3371
+2016-11-01 13:25:24,763 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:25,283 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:26,286 INFO spawned: 'npm' with pid 3386
+2016-11-01 13:25:27,630 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:28,104 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:29,110 INFO spawned: 'npm' with pid 3401
+2016-11-01 13:25:30,474 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:31,013 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:32,017 INFO spawned: 'npm' with pid 3416
+2016-11-01 13:25:33,367 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:33,710 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:34,717 INFO spawned: 'npm' with pid 3431
+2016-11-01 13:25:36,100 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:36,424 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:37,429 INFO spawned: 'npm' with pid 3446
+2016-11-01 13:25:38,788 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:39,126 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:40,130 INFO spawned: 'npm' with pid 3461
+2016-11-01 13:25:41,484 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:41,758 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:42,760 INFO spawned: 'npm' with pid 3476
+2016-11-01 13:25:44,109 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:44,404 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:45,409 INFO spawned: 'npm' with pid 3491
+2016-11-01 13:25:46,762 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:47,108 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:48,114 INFO spawned: 'npm' with pid 3506
+2016-11-01 13:25:49,456 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:49,819 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:50,823 INFO spawned: 'npm' with pid 3521
+2016-11-01 13:25:52,184 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:52,497 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:53,504 INFO spawned: 'npm' with pid 3536
+2016-11-01 13:25:54,859 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:55,405 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:56,409 INFO spawned: 'npm' with pid 3551
+2016-11-01 13:25:57,758 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:25:58,127 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:25:59,133 INFO spawned: 'npm' with pid 3566
+2016-11-01 13:26:00,494 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:00,863 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:01,869 INFO spawned: 'npm' with pid 3581
+2016-11-01 13:26:03,223 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:03,819 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:04,823 INFO spawned: 'npm' with pid 3596
+2016-11-01 13:26:06,183 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:06,545 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:07,553 INFO spawned: 'npm' with pid 3611
+2016-11-01 13:26:08,905 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:09,389 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:10,395 INFO spawned: 'npm' with pid 3626
+2016-11-01 13:26:11,748 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:12,318 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:13,321 INFO spawned: 'npm' with pid 3641
+2016-11-01 13:26:14,667 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:15,125 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:16,128 INFO spawned: 'npm' with pid 3656
+2016-11-01 13:26:17,474 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:17,927 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:18,935 INFO spawned: 'npm' with pid 3671
+2016-11-01 13:26:20,290 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:20,749 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:21,756 INFO spawned: 'npm' with pid 3686
+2016-11-01 13:26:23,109 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:23,553 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:24,560 INFO spawned: 'npm' with pid 3701
+2016-11-01 13:26:25,914 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:26,344 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:27,349 INFO spawned: 'npm' with pid 3716
+2016-11-01 13:26:28,708 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:29,336 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:30,342 INFO spawned: 'npm' with pid 3731
+2016-11-01 13:26:31,704 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:32,093 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:33,099 INFO spawned: 'npm' with pid 3746
+2016-11-01 13:26:34,455 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:26:34,979 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:35,982 INFO spawned: 'npm' with pid 3761
+2016-11-01 13:26:36,402 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:37,406 INFO spawned: 'npm' with pid 3776
+2016-11-01 13:26:37,823 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:39,832 INFO spawned: 'npm' with pid 3796
+2016-11-01 13:26:40,265 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:43,274 INFO spawned: 'npm' with pid 3815
+2016-11-01 13:26:43,714 INFO exited: npm (exit status 1; not expected)
+2016-11-01 13:26:44,719 INFO gave up: npm entered FATAL state, too many start retries too quickly
+2016-11-01 13:38:32,941 WARN received SIGTERM indicating exit request
+2016-11-01 13:39:43,250 CRIT Supervisor running as root (no user in config file)
+2016-11-01 13:39:43,251 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 13:39:43,251 WARN Included extra file "/etc/supervisor/conf.d/xvfb.conf" during parsing
+2016-11-01 13:39:43,256 INFO supervisord started with pid 1
+2016-11-01 13:39:44,260 INFO spawned: 'npm' with pid 8
+2016-11-01 13:39:44,262 INFO spawned: 'xvfb' with pid 9
+2016-11-01 13:39:44,279 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 13:39:45,620 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 13:39:45,622 INFO spawned: 'xvfb' with pid 33
+2016-11-01 13:39:45,633 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 13:39:48,071 INFO spawned: 'xvfb' with pid 42
+2016-11-01 13:39:48,081 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 13:39:51,092 INFO spawned: 'xvfb' with pid 51
+2016-11-01 13:39:51,101 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 13:39:52,107 INFO gave up: xvfb entered FATAL state, too many start retries too quickly
+2016-11-01 15:01:14,094 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:15,098 INFO spawned: 'npm' with pid 96
+2016-11-01 15:01:16,458 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:16,854 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:17,862 INFO spawned: 'npm' with pid 111
+2016-11-01 15:01:19,207 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:19,881 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:20,885 INFO spawned: 'npm' with pid 152
+2016-11-01 15:01:22,236 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:22,642 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:23,645 INFO spawned: 'npm' with pid 167
+2016-11-01 15:01:25,007 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:25,576 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:26,579 INFO spawned: 'npm' with pid 187
+2016-11-01 15:01:27,949 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:28,874 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:29,878 INFO spawned: 'npm' with pid 260
+2016-11-01 15:01:31,264 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:31,795 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:32,798 INFO spawned: 'npm' with pid 321
+2016-11-01 15:01:34,158 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:34,584 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:35,589 INFO spawned: 'npm' with pid 336
+2016-11-01 15:01:36,933 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:37,280 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:38,283 INFO spawned: 'npm' with pid 351
+2016-11-01 15:01:39,640 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:40,023 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:41,026 INFO spawned: 'npm' with pid 366
+2016-11-01 15:01:42,384 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:42,812 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:43,815 INFO spawned: 'npm' with pid 381
+2016-11-01 15:01:45,170 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:45,509 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:46,512 INFO spawned: 'npm' with pid 396
+2016-11-01 15:01:47,863 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:48,308 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:49,314 INFO spawned: 'npm' with pid 411
+2016-11-01 15:01:50,660 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:51,198 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:52,205 INFO spawned: 'npm' with pid 426
+2016-11-01 15:01:53,575 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:53,914 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:54,918 INFO spawned: 'npm' with pid 441
+2016-11-01 15:01:56,266 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:56,781 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:01:57,785 INFO spawned: 'npm' with pid 456
+2016-11-01 15:01:59,166 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:01:59,611 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:00,615 INFO spawned: 'npm' with pid 471
+2016-11-01 15:02:01,966 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:02,576 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:03,581 INFO spawned: 'npm' with pid 486
+2016-11-01 15:02:04,940 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:05,336 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:06,340 INFO spawned: 'npm' with pid 501
+2016-11-01 15:02:07,724 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:08,277 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:09,282 INFO spawned: 'npm' with pid 516
+2016-11-01 15:02:10,647 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:11,011 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:12,015 INFO spawned: 'npm' with pid 531
+2016-11-01 15:02:13,389 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:13,796 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:14,803 INFO spawned: 'npm' with pid 552
+2016-11-01 15:02:16,184 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:16,687 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:17,693 INFO spawned: 'npm' with pid 567
+2016-11-01 15:02:19,039 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:19,632 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:20,634 INFO spawned: 'npm' with pid 582
+2016-11-01 15:02:21,992 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:22,336 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:23,340 INFO spawned: 'npm' with pid 597
+2016-11-01 15:02:24,706 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:25,077 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:26,085 INFO spawned: 'npm' with pid 612
+2016-11-01 15:02:27,437 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:27,819 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:28,825 INFO spawned: 'npm' with pid 627
+2016-11-01 15:02:30,182 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:30,837 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:31,846 INFO spawned: 'npm' with pid 642
+2016-11-01 15:02:33,195 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:33,556 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:34,561 INFO spawned: 'npm' with pid 657
+2016-11-01 15:02:35,914 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:36,313 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:37,320 INFO spawned: 'npm' with pid 672
+2016-11-01 15:02:38,688 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:39,147 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:40,152 INFO spawned: 'npm' with pid 687
+2016-11-01 15:02:41,515 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:02:41,919 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:02:42,924 INFO spawned: 'npm' with pid 707
+2016-11-01 15:02:44,289 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:39,525 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:40,528 INFO spawned: 'npm' with pid 838
+2016-11-01 15:06:41,900 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:42,239 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:43,243 INFO spawned: 'npm' with pid 853
+2016-11-01 15:06:44,585 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:45,065 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:45,352 INFO spawned: 'npm' with pid 878
+2016-11-01 15:06:45,352 INFO reaped unknown pid 727
+2016-11-01 15:06:46,715 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:47,432 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:48,435 INFO spawned: 'npm' with pid 919
+2016-11-01 15:06:49,838 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:50,439 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:51,442 INFO spawned: 'npm' with pid 992
+2016-11-01 15:06:52,793 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:53,328 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:54,330 INFO spawned: 'npm' with pid 1052
+2016-11-01 15:06:55,680 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:56,173 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:57,177 INFO spawned: 'npm' with pid 1067
+2016-11-01 15:06:58,521 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:06:58,941 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:06:59,945 INFO spawned: 'npm' with pid 1082
+2016-11-01 15:07:01,310 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:01,750 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:02,754 INFO spawned: 'npm' with pid 1097
+2016-11-01 15:07:04,104 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:04,348 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:05,351 INFO spawned: 'npm' with pid 1112
+2016-11-01 15:07:06,711 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:06,956 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:07,960 INFO spawned: 'npm' with pid 1127
+2016-11-01 15:07:09,314 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:09,637 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:10,642 INFO spawned: 'npm' with pid 1142
+2016-11-01 15:07:11,997 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:12,381 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:13,385 INFO spawned: 'npm' with pid 1157
+2016-11-01 15:07:14,748 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:15,159 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:16,166 INFO spawned: 'npm' with pid 1172
+2016-11-01 15:07:17,518 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:17,859 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:18,862 INFO spawned: 'npm' with pid 1187
+2016-11-01 15:07:20,213 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:20,555 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:21,559 INFO spawned: 'npm' with pid 1202
+2016-11-01 15:07:22,905 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:23,166 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:24,172 INFO spawned: 'npm' with pid 1217
+2016-11-01 15:07:25,526 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:25,933 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:26,939 INFO spawned: 'npm' with pid 1232
+2016-11-01 15:07:28,295 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:28,852 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:29,858 INFO spawned: 'npm' with pid 1247
+2016-11-01 15:07:31,237 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:31,633 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:32,636 INFO spawned: 'npm' with pid 1262
+2016-11-01 15:07:34,010 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:34,360 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:35,364 INFO spawned: 'npm' with pid 1277
+2016-11-01 15:07:36,733 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:37,086 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:38,094 INFO spawned: 'npm' with pid 1298
+2016-11-01 15:07:39,443 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:39,778 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:40,781 INFO spawned: 'npm' with pid 1313
+2016-11-01 15:07:42,133 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:42,484 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:43,488 INFO spawned: 'npm' with pid 1328
+2016-11-01 15:07:44,838 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:45,145 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:46,149 INFO spawned: 'npm' with pid 1343
+2016-11-01 15:07:47,503 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:47,794 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:48,800 INFO spawned: 'npm' with pid 1358
+2016-11-01 15:07:50,159 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:50,549 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:51,555 INFO spawned: 'npm' with pid 1373
+2016-11-01 15:07:52,921 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:53,316 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:54,321 INFO spawned: 'npm' with pid 1388
+2016-11-01 15:07:55,665 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:55,998 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:57,002 INFO spawned: 'npm' with pid 1403
+2016-11-01 15:07:58,337 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:07:58,780 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:07:59,783 INFO spawned: 'npm' with pid 1418
+2016-11-01 15:08:01,133 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:08:01,499 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:08:02,505 INFO spawned: 'npm' with pid 1433
+2016-11-01 15:08:03,843 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:08:04,132 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:08:05,139 INFO spawned: 'npm' with pid 1448
+2016-11-01 15:08:06,480 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:08:06,909 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:08:07,912 INFO spawned: 'npm' with pid 1463
+2016-11-01 15:08:09,258 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:28:11,006 CRIT Supervisor running as root (no user in config file)
+2016-11-01 15:28:11,006 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 15:28:11,007 WARN Included extra file "/etc/supervisor/conf.d/xvfb.conf" during parsing
+2016-11-01 15:28:11,016 INFO supervisord started with pid 1
+2016-11-01 15:28:12,029 INFO spawned: 'npm' with pid 9
+2016-11-01 15:28:12,032 INFO spawned: 'xvfb' with pid 10
+2016-11-01 15:28:12,052 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 15:28:13,833 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:28:13,835 INFO spawned: 'xvfb' with pid 33
+2016-11-01 15:28:13,848 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 15:28:16,657 INFO spawned: 'xvfb' with pid 42
+2016-11-01 15:28:16,667 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 15:28:19,677 INFO spawned: 'xvfb' with pid 51
+2016-11-01 15:28:19,687 INFO exited: xvfb (exit status 2; not expected)
+2016-11-01 15:28:20,689 INFO gave up: xvfb entered FATAL state, too many start retries too quickly
+2016-11-01 15:29:04,695 WARN received SIGTERM indicating exit request
+2016-11-01 15:29:04,696 INFO waiting for npm to die
+2016-11-01 15:29:06,710 INFO stopped: npm (terminated by SIGTERM)
+2016-11-01 15:30:26,821 CRIT Supervisor running as root (no user in config file)
+2016-11-01 15:30:26,822 WARN Included extra file "/etc/supervisor/conf.d/fluxbox.conf" during parsing
+2016-11-01 15:30:26,822 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 15:30:26,822 WARN Included extra file "/etc/supervisor/conf.d/x11vnc.conf" during parsing
+2016-11-01 15:30:26,823 WARN Included extra file "/etc/supervisor/conf.d/xvfb.conf" during parsing
+2016-11-01 15:30:26,829 INFO supervisord started with pid 1
+2016-11-01 15:30:27,835 INFO spawned: 'npm' with pid 9
+2016-11-01 15:30:27,841 INFO spawned: 'Xvfb' with pid 10
+2016-11-01 15:30:27,843 INFO spawned: 'x11vnc' with pid 11
+2016-11-01 15:30:27,845 INFO spawned: 'fluxbox' with pid 16
+2016-11-01 15:30:28,860 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:30:28,860 INFO success: Xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:30:28,861 INFO success: x11vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:30:28,861 INFO success: fluxbox entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:34:51,659 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:34:52,661 INFO spawned: 'npm' with pid 162
+2016-11-01 15:34:54,126 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:34:54,557 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:34:55,560 INFO spawned: 'npm' with pid 177
+2016-11-01 15:34:56,936 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:34:57,469 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:34:58,475 INFO spawned: 'npm' with pid 192
+2016-11-01 15:34:59,844 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:00,286 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:00,639 INFO spawned: 'npm' with pid 217
+2016-11-01 15:35:00,640 INFO reaped unknown pid 46
+2016-11-01 15:35:02,017 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:02,708 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:03,712 INFO spawned: 'npm' with pid 286
+2016-11-01 15:35:05,074 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:05,785 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:06,789 INFO spawned: 'npm' with pid 340
+2016-11-01 15:35:08,168 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:08,680 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:09,683 INFO spawned: 'npm' with pid 355
+2016-11-01 15:35:11,038 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:11,542 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:12,545 INFO spawned: 'npm' with pid 370
+2016-11-01 15:35:13,912 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:14,485 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:15,076 INFO spawned: 'npm' with pid 385
+2016-11-01 15:35:16,444 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:16,862 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:17,865 INFO spawned: 'npm' with pid 400
+2016-11-01 15:35:19,231 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:19,767 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:20,771 INFO spawned: 'npm' with pid 415
+2016-11-01 15:35:22,131 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:22,570 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:23,573 INFO spawned: 'npm' with pid 430
+2016-11-01 15:35:24,937 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:25,511 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:26,515 INFO spawned: 'npm' with pid 445
+2016-11-01 15:35:27,877 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:28,431 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:29,435 INFO spawned: 'npm' with pid 460
+2016-11-01 15:35:30,798 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:31,283 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:32,286 INFO spawned: 'npm' with pid 475
+2016-11-01 15:35:33,648 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:34,110 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:35,113 INFO spawned: 'npm' with pid 490
+2016-11-01 15:35:36,511 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:37,212 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:38,215 INFO spawned: 'npm' with pid 505
+2016-11-01 15:35:39,586 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:40,085 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:41,090 INFO spawned: 'npm' with pid 520
+2016-11-01 15:35:42,907 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:42,928 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:43,932 INFO spawned: 'npm' with pid 535
+2016-11-01 15:35:45,301 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:45,773 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:46,778 INFO spawned: 'npm' with pid 550
+2016-11-01 15:35:48,157 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:48,768 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:49,771 INFO spawned: 'npm' with pid 565
+2016-11-01 15:35:51,130 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:51,651 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:52,656 INFO spawned: 'npm' with pid 580
+2016-11-01 15:35:54,031 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:54,656 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:55,660 INFO spawned: 'npm' with pid 595
+2016-11-01 15:35:57,031 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:35:57,647 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:35:58,651 INFO spawned: 'npm' with pid 610
+2016-11-01 15:36:00,017 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:00,477 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:01,481 INFO spawned: 'npm' with pid 625
+2016-11-01 15:36:02,847 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:03,328 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:04,331 INFO spawned: 'npm' with pid 640
+2016-11-01 15:36:05,706 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:06,156 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:07,160 INFO spawned: 'npm' with pid 655
+2016-11-01 15:36:08,506 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:08,958 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:09,961 INFO spawned: 'npm' with pid 670
+2016-11-01 15:36:11,325 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:11,892 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:12,896 INFO spawned: 'npm' with pid 685
+2016-11-01 15:36:14,262 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:14,675 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:15,679 INFO spawned: 'npm' with pid 700
+2016-11-01 15:36:17,033 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:17,476 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:18,479 INFO spawned: 'npm' with pid 715
+2016-11-01 15:36:19,854 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:20,551 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:21,555 INFO spawned: 'npm' with pid 730
+2016-11-01 15:36:22,965 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:23,742 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:24,745 INFO spawned: 'npm' with pid 745
+2016-11-01 15:36:26,109 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:26,687 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:27,691 INFO spawned: 'npm' with pid 760
+2016-11-01 15:36:29,062 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:29,581 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:30,585 INFO spawned: 'npm' with pid 775
+2016-11-01 15:36:31,942 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:32,454 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:33,457 INFO spawned: 'npm' with pid 790
+2016-11-01 15:36:34,820 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:35,628 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:36,630 INFO spawned: 'npm' with pid 805
+2016-11-01 15:36:37,999 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:38,471 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:39,474 INFO spawned: 'npm' with pid 820
+2016-11-01 15:36:40,863 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:41,476 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:42,479 INFO spawned: 'npm' with pid 835
+2016-11-01 15:36:43,848 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:44,555 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:45,558 INFO spawned: 'npm' with pid 850
+2016-11-01 15:36:46,933 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:47,418 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:48,422 INFO spawned: 'npm' with pid 865
+2016-11-01 15:36:49,782 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:50,326 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:51,330 INFO spawned: 'npm' with pid 880
+2016-11-01 15:36:52,687 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:53,157 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:54,160 INFO spawned: 'npm' with pid 895
+2016-11-01 15:36:55,523 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:56,098 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:57,101 INFO spawned: 'npm' with pid 910
+2016-11-01 15:36:58,459 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:36:58,873 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:36:59,876 INFO spawned: 'npm' with pid 925
+2016-11-01 15:37:01,237 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:01,726 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:02,730 INFO spawned: 'npm' with pid 940
+2016-11-01 15:37:04,086 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:04,490 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:05,493 INFO spawned: 'npm' with pid 955
+2016-11-01 15:37:06,847 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:07,364 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:08,367 INFO spawned: 'npm' with pid 970
+2016-11-01 15:37:09,730 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:10,168 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:11,174 INFO spawned: 'npm' with pid 985
+2016-11-01 15:37:12,531 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:12,948 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:13,951 INFO spawned: 'npm' with pid 1000
+2016-11-01 15:37:15,320 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:15,746 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:16,751 INFO spawned: 'npm' with pid 1015
+2016-11-01 15:37:18,108 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:18,544 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:19,547 INFO spawned: 'npm' with pid 1030
+2016-11-01 15:37:20,903 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:21,196 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:22,200 INFO spawned: 'npm' with pid 1045
+2016-11-01 15:37:23,560 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:23,965 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:24,970 INFO spawned: 'npm' with pid 1060
+2016-11-01 15:37:26,351 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:26,901 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:27,905 INFO spawned: 'npm' with pid 1075
+2016-11-01 15:37:29,278 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:29,755 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:30,760 INFO spawned: 'npm' with pid 1090
+2016-11-01 15:37:32,110 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:32,593 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:33,597 INFO spawned: 'npm' with pid 1105
+2016-11-01 15:37:34,955 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:35,428 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:36,432 INFO spawned: 'npm' with pid 1120
+2016-11-01 15:37:37,800 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:38,308 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:39,311 INFO spawned: 'npm' with pid 1135
+2016-11-01 15:37:40,677 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:41,167 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:42,171 INFO spawned: 'npm' with pid 1150
+2016-11-01 15:37:43,544 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:44,091 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:45,095 INFO spawned: 'npm' with pid 1165
+2016-11-01 15:37:46,460 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:46,859 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:47,863 INFO spawned: 'npm' with pid 1180
+2016-11-01 15:37:49,219 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:49,588 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:50,591 INFO spawned: 'npm' with pid 1195
+2016-11-01 15:37:51,954 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:52,379 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:53,385 INFO spawned: 'npm' with pid 1210
+2016-11-01 15:37:54,762 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:55,279 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:56,283 INFO spawned: 'npm' with pid 1225
+2016-11-01 15:37:57,642 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:37:58,181 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:37:59,185 INFO spawned: 'npm' with pid 1240
+2016-11-01 15:38:00,537 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:00,906 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:01,910 INFO spawned: 'npm' with pid 1255
+2016-11-01 15:38:03,269 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:03,585 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:04,589 INFO spawned: 'npm' with pid 1270
+2016-11-01 15:38:05,950 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:06,370 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:07,374 INFO spawned: 'npm' with pid 1285
+2016-11-01 15:38:08,730 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:09,025 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:10,028 INFO spawned: 'npm' with pid 1300
+2016-11-01 15:38:11,387 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:11,798 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:12,801 INFO spawned: 'npm' with pid 1315
+2016-11-01 15:38:14,156 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:14,671 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:15,675 INFO spawned: 'npm' with pid 1330
+2016-11-01 15:38:17,032 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:17,342 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:18,347 INFO spawned: 'npm' with pid 1345
+2016-11-01 15:38:19,708 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:20,070 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:21,074 INFO spawned: 'npm' with pid 1360
+2016-11-01 15:38:22,424 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:22,829 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:23,832 INFO spawned: 'npm' with pid 1375
+2016-11-01 15:38:25,204 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:25,585 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:26,590 INFO spawned: 'npm' with pid 1390
+2016-11-01 15:38:27,954 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:38:28,319 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:38:29,322 INFO spawned: 'npm' with pid 1405
+2016-11-01 15:38:30,681 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 15:45:39,393 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:45:40,397 INFO spawned: 'npm' with pid 1450
+2016-11-01 15:45:40,839 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:45:41,843 INFO spawned: 'npm' with pid 1465
+2016-11-01 15:45:42,290 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:45:44,297 INFO spawned: 'npm' with pid 1480
+2016-11-01 15:45:44,738 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:45:47,746 INFO spawned: 'npm' with pid 1495
+2016-11-01 15:45:48,204 INFO exited: npm (exit status 1; not expected)
+2016-11-01 15:45:49,206 INFO gave up: npm entered FATAL state, too many start retries too quickly
+2016-11-01 16:08:49,221 WARN received SIGTERM indicating exit request
+2016-11-01 16:08:49,222 INFO waiting for Xvfb, x11vnc, fluxbox to die
+2016-11-01 16:08:49,226 INFO stopped: fluxbox (exit status 0)
+2016-11-01 16:08:49,231 INFO stopped: x11vnc (exit status 2)
+2016-11-01 16:08:49,248 INFO stopped: Xvfb (exit status 0)
+2016-11-01 16:08:59,505 CRIT Supervisor running as root (no user in config file)
+2016-11-01 16:08:59,505 WARN Included extra file "/etc/supervisor/conf.d/fluxbox.conf" during parsing
+2016-11-01 16:08:59,506 WARN Included extra file "/etc/supervisor/conf.d/node.conf" during parsing
+2016-11-01 16:08:59,506 WARN Included extra file "/etc/supervisor/conf.d/x11vnc.conf" during parsing
+2016-11-01 16:08:59,507 WARN Included extra file "/etc/supervisor/conf.d/xvfb.conf" during parsing
+2016-11-01 16:08:59,518 INFO supervisord started with pid 1
+2016-11-01 16:09:00,524 INFO spawned: 'npm' with pid 9
+2016-11-01 16:09:00,528 INFO spawned: 'Xvfb' with pid 10
+2016-11-01 16:09:00,531 INFO spawned: 'x11vnc' with pid 11
+2016-11-01 16:09:00,533 INFO spawned: 'fluxbox' with pid 12
+2016-11-01 16:09:01,891 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:09:01,891 INFO success: Xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:09:01,892 INFO success: x11vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:09:01,892 INFO success: fluxbox entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:12:22,451 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:12:23,455 INFO spawned: 'npm' with pid 132
+2016-11-01 16:12:24,812 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:13:20,019 INFO reaped unknown pid 95
+2016-11-01 16:13:21,449 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:13:22,452 INFO spawned: 'npm' with pid 182
+2016-11-01 16:13:23,802 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:13:55,028 INFO reaped unknown pid 156
+2016-11-01 16:13:56,387 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:13:57,390 INFO spawned: 'npm' with pid 275
+2016-11-01 16:13:58,772 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:14:06,133 INFO reaped unknown pid 246
+2016-11-01 16:14:06,137 INFO reaped unknown pid 333
+2016-11-01 16:14:06,454 INFO reaped unknown pid 205
+2016-11-01 16:14:07,848 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:14:08,852 INFO spawned: 'npm' with pid 401
+2016-11-01 16:14:10,208 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:14:53,749 INFO reaped unknown pid 375
+2016-11-01 16:14:55,126 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:14:56,129 INFO spawned: 'npm' with pid 450
+2016-11-01 16:14:57,485 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:15:22,301 INFO reaped unknown pid 424
+2016-11-01 16:15:23,819 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:15:24,824 INFO spawned: 'npm' with pid 525
+2016-11-01 16:15:26,194 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:15:30,566 INFO reaped unknown pid 490
+2016-11-01 16:15:30,895 INFO reaped unknown pid 475
+2016-11-01 16:15:32,377 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:15:33,380 INFO spawned: 'npm' with pid 616
+2016-11-01 16:15:34,841 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:17:44,977 INFO reaped unknown pid 591
+2016-11-01 16:17:44,979 INFO reaped unknown pid 686
+2016-11-01 16:17:45,315 INFO reaped unknown pid 550
+2016-11-01 16:17:46,732 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:17:47,737 INFO spawned: 'npm' with pid 800
+2016-11-01 16:17:49,124 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:18:48,612 INFO reaped unknown pid 775
+2016-11-01 16:18:48,613 INFO reaped unknown pid 861
+2016-11-01 16:18:48,934 INFO reaped unknown pid 734
+2016-11-01 16:18:50,332 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:18:51,335 INFO spawned: 'npm' with pid 970
+2016-11-01 16:18:52,751 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:19:52,078 INFO reaped unknown pid 945
+2016-11-01 16:19:52,080 INFO reaped unknown pid 1038
+2016-11-01 16:19:52,407 INFO reaped unknown pid 904
+2016-11-01 16:19:53,793 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:19:54,796 INFO spawned: 'npm' with pid 1145
+2016-11-01 16:19:56,191 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:24:28,056 INFO reaped unknown pid 1122
+2016-11-01 16:24:28,058 INFO reaped unknown pid 1202
+2016-11-01 16:24:28,378 INFO reaped unknown pid 1081
+2016-11-01 16:24:29,752 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:24:30,755 INFO spawned: 'npm' with pid 1316
+2016-11-01 16:24:32,118 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:24:36,572 INFO reaped unknown pid 1291
+2016-11-01 16:24:36,577 INFO reaped unknown pid 1377
+2016-11-01 16:24:36,908 INFO reaped unknown pid 1250
+2016-11-01 16:24:38,264 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:24:39,267 INFO spawned: 'npm' with pid 1486
+2016-11-01 16:24:40,721 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 16:57:38,234 INFO reaped unknown pid 1538
+2016-11-01 16:57:44,765 INFO reaped unknown pid 1420
+2016-11-01 16:57:46,158 INFO exited: npm (exit status 1; not expected)
+2016-11-01 16:57:47,161 INFO spawned: 'npm' with pid 1654
+2016-11-01 16:57:48,584 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:10:27,755 INFO reaped unknown pid 1631
+2016-11-01 17:10:27,756 INFO reaped unknown pid 1722
+2016-11-01 17:10:28,080 INFO reaped unknown pid 1590
+2016-11-01 17:10:29,496 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:10:30,499 INFO spawned: 'npm' with pid 1841
+2016-11-01 17:10:31,869 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:22:18,773 INFO reaped unknown pid 1816
+2016-11-01 17:22:18,776 INFO reaped unknown pid 1896
+2016-11-01 17:22:19,099 INFO reaped unknown pid 1775
+2016-11-01 17:22:20,743 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:22:21,747 INFO spawned: 'npm' with pid 2015
+2016-11-01 17:22:23,133 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:24:18,791 INFO reaped unknown pid 1990
+2016-11-01 17:24:18,792 INFO reaped unknown pid 2074
+2016-11-01 17:24:19,139 INFO reaped unknown pid 1949
+2016-11-01 17:24:20,614 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:24:21,617 INFO spawned: 'npm' with pid 2197
+2016-11-01 17:24:23,007 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:26:14,541 INFO reaped unknown pid 2171
+2016-11-01 17:26:14,543 INFO reaped unknown pid 2257
+2016-11-01 17:26:14,855 INFO reaped unknown pid 2130
+2016-11-01 17:26:16,268 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:26:17,273 INFO spawned: 'npm' with pid 2376
+2016-11-01 17:26:18,742 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:33:18,464 INFO reaped unknown pid 2351
+2016-11-01 17:33:18,467 INFO reaped unknown pid 2433
+2016-11-01 17:33:18,799 INFO reaped unknown pid 2310
+2016-11-01 17:33:20,507 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:33:21,511 INFO spawned: 'npm' with pid 2520
+2016-11-01 17:33:22,869 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:33:25,917 INFO reaped unknown pid 2494
+2016-11-01 17:33:27,359 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:33:28,362 INFO spawned: 'npm' with pid 2569
+2016-11-01 17:33:29,734 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:36:12,547 INFO reaped unknown pid 2543
+2016-11-01 17:36:14,142 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:36:15,146 INFO spawned: 'npm' with pid 2656
+2016-11-01 17:36:16,695 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:36:20,576 INFO reaped unknown pid 2716
+2016-11-01 17:37:13,517 INFO reaped unknown pid 2592
+2016-11-01 17:37:15,281 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:37:16,284 INFO spawned: 'npm' with pid 2822
+2016-11-01 17:37:17,824 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:37:21,748 INFO reaped unknown pid 2880
+2016-11-01 17:39:13,527 INFO reaped unknown pid 2762
+2016-11-01 17:39:15,257 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:39:16,260 INFO spawned: 'npm' with pid 2969
+2016-11-01 17:39:17,771 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:39:21,754 INFO reaped unknown pid 3047
+2016-11-01 17:39:43,009 INFO reaped unknown pid 2924
+2016-11-01 17:39:44,764 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:39:45,768 INFO spawned: 'npm' with pid 3157
+2016-11-01 17:39:47,332 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:39:51,789 INFO reaped unknown pid 3220
+2016-11-01 17:47:02,356 INFO reaped unknown pid 3093
+2016-11-01 17:47:04,000 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:47:05,002 INFO spawned: 'npm' with pid 3329
+2016-11-01 17:47:06,487 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:47:10,232 INFO reaped unknown pid 3384
+2016-11-01 17:50:17,953 INFO reaped unknown pid 3266
+2016-11-01 17:50:19,562 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:50:20,566 INFO spawned: 'npm' with pid 3456
+2016-11-01 17:50:21,949 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:50:29,169 INFO reaped unknown pid 3430
+2016-11-01 17:50:30,676 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:50:31,682 INFO spawned: 'npm' with pid 3505
+2016-11-01 17:50:33,055 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:51:37,987 INFO reaped unknown pid 3479
+2016-11-01 17:51:39,457 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:51:40,460 INFO spawned: 'npm' with pid 3554
+2016-11-01 17:51:41,854 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:51:44,887 INFO reaped unknown pid 3528
+2016-11-01 17:51:46,260 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:51:47,268 INFO spawned: 'npm' with pid 3603
+2016-11-01 17:51:48,617 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:52:34,815 INFO reaped unknown pid 3577
+2016-11-01 17:52:36,690 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:52:37,694 INFO spawned: 'npm' with pid 3692
+2016-11-01 17:52:39,201 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 17:52:43,993 INFO reaped unknown pid 3747
+2016-11-01 17:53:38,751 INFO reaped unknown pid 3626
+2016-11-01 17:53:40,205 INFO exited: npm (exit status 1; not expected)
+2016-11-01 17:53:41,208 INFO spawned: 'npm' with pid 3858
+2016-11-01 17:53:42,693 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 18:04:50,142 INFO reaped unknown pid 3923
+2016-11-01 18:04:50,143 INFO reaped unknown pid 3838
+2016-11-01 18:04:50,468 INFO reaped unknown pid 3797
+2016-11-01 18:04:51,873 INFO exited: npm (exit status 1; not expected)
+2016-11-01 18:04:52,877 INFO spawned: 'npm' with pid 4040
+2016-11-01 18:04:54,266 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 18:05:36,701 INFO reaped unknown pid 4015
+2016-11-01 18:05:36,703 INFO reaped unknown pid 4100
+2016-11-01 18:05:37,011 INFO reaped unknown pid 3974
+2016-11-01 18:05:38,444 INFO exited: npm (exit status 1; not expected)
+2016-11-01 18:05:39,449 INFO spawned: 'npm' with pid 4216
+2016-11-01 18:05:40,866 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-01 18:05:44,898 INFO reaped unknown pid 4265
+2016-11-02 06:45:38,740 INFO reaped unknown pid 4150
+2016-11-02 06:45:49,926 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:45:50,934 INFO spawned: 'npm' with pid 4371
+2016-11-02 06:45:52,443 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:47:52,098 INFO reaped unknown pid 4352
+2016-11-02 06:47:52,099 INFO reaped unknown pid 4436
+2016-11-02 06:47:52,431 INFO reaped unknown pid 4311
+2016-11-02 06:48:01,178 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:48:02,182 INFO spawned: 'npm' with pid 4552
+2016-11-02 06:48:03,623 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:50:43,638 INFO reaped unknown pid 4532
+2016-11-02 06:50:43,639 INFO reaped unknown pid 4623
+2016-11-02 06:50:43,971 INFO reaped unknown pid 4491
+2016-11-02 06:50:57,356 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:50:58,359 INFO spawned: 'npm' with pid 4758
+2016-11-02 06:50:59,739 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:52:43,646 INFO reaped unknown pid 4735
+2016-11-02 06:52:43,648 INFO reaped unknown pid 4823
+2016-11-02 06:52:43,996 INFO reaped unknown pid 4694
+2016-11-02 06:52:53,660 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:52:54,664 INFO spawned: 'npm' with pid 4938
+2016-11-02 06:52:56,152 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:54:03,297 INFO reaped unknown pid 4917
+2016-11-02 06:54:03,298 INFO reaped unknown pid 5000
+2016-11-02 06:54:03,618 INFO reaped unknown pid 4876
+2016-11-02 06:54:19,191 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:54:20,195 INFO spawned: 'npm' with pid 5115
+2016-11-02 06:54:21,592 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:55:37,104 INFO reaped unknown pid 5092
+2016-11-02 06:55:37,105 INFO reaped unknown pid 5165
+2016-11-02 06:55:37,423 INFO reaped unknown pid 5051
+2016-11-02 06:55:51,217 INFO exited: npm (exit status 1; not expected)
+2016-11-02 06:55:52,221 INFO spawned: 'npm' with pid 5283
+2016-11-02 06:55:53,592 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 06:56:18,331 INFO reaped unknown pid 5346
+2016-11-02 07:00:47,390 INFO reaped unknown pid 5219
+2016-11-02 07:01:02,819 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:01:03,823 INFO spawned: 'npm' with pid 5460
+2016-11-02 07:01:05,217 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:02:47,072 INFO reaped unknown pid 5435
+2016-11-02 07:02:47,074 INFO reaped unknown pid 5520
+2016-11-02 07:02:47,402 INFO reaped unknown pid 5394
+2016-11-02 07:02:56,264 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:02:57,267 INFO spawned: 'npm' with pid 5641
+2016-11-02 07:02:58,690 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:03:22,994 INFO reaped unknown pid 5708
+2016-11-02 07:04:09,275 INFO reaped unknown pid 5577
+2016-11-02 07:04:16,643 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:04:17,649 INFO spawned: 'npm' with pid 5819
+2016-11-02 07:04:19,090 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:04:43,945 INFO reaped unknown pid 5875
+2016-11-02 07:05:16,299 INFO reaped unknown pid 5756
+2016-11-02 07:05:24,884 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:05:25,888 INFO spawned: 'npm' with pid 5985
+2016-11-02 07:05:27,314 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:05:54,411 INFO reaped unknown pid 6057
+2016-11-02 07:07:22,183 INFO reaped unknown pid 5923
+2016-11-02 07:09:20,949 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:09:21,953 INFO spawned: 'npm' with pid 6171
+2016-11-02 07:09:23,375 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:10:59,540 INFO reaped unknown pid 6148
+2016-11-02 07:10:59,542 INFO reaped unknown pid 6234
+2016-11-02 07:10:59,859 INFO reaped unknown pid 6107
+2016-11-02 07:11:18,951 INFO exited: npm (exit status 1; not expected)
+2016-11-02 07:11:19,955 INFO spawned: 'npm' with pid 6353
+2016-11-02 07:11:21,378 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 07:50:13,959 INFO reaped unknown pid 6412
+2016-11-02 10:11:05,855 INFO reaped unknown pid 6291
+2016-11-02 10:11:26,677 INFO exited: npm (exit status 1; not expected)
+2016-11-02 10:11:27,680 INFO spawned: 'npm' with pid 6543
+2016-11-02 10:11:29,104 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 10:44:26,602 INFO reaped unknown pid 6606
+2016-11-02 13:11:58,830 INFO reaped unknown pid 6477
+2016-11-02 13:12:00,730 INFO exited: npm (exit status 1; not expected)
+2016-11-02 13:12:01,737 INFO spawned: 'npm' with pid 6685
+2016-11-02 13:12:03,151 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 13:13:21,034 INFO reaped unknown pid 6659
+2016-11-02 13:13:22,619 INFO exited: npm (exit status 1; not expected)
+2016-11-02 13:13:23,622 INFO spawned: 'npm' with pid 6752
+2016-11-02 13:13:24,985 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 13:15:20,728 INFO reaped unknown pid 6749
+2016-11-02 13:15:20,746 INFO reaped unknown pid 6833
+2016-11-02 13:15:21,077 INFO reaped unknown pid 6708
+2016-11-02 13:15:22,648 INFO exited: npm (exit status 1; not expected)
+2016-11-02 13:15:23,651 INFO spawned: 'npm' with pid 6943
+2016-11-02 13:15:25,085 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-02 13:48:22,582 INFO reaped unknown pid 7008
+2016-11-05 00:51:37,939 INFO reaped unknown pid 6882
+2016-11-05 00:51:39,519 INFO exited: npm (exit status 1; not expected)
+2016-11-05 00:51:40,522 INFO spawned: 'npm' with pid 7130
+2016-11-05 00:51:41,968 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-05 01:24:39,427 INFO reaped unknown pid 7195
+2016-11-10 07:26:24,755 WARN received SIGTERM indicating exit request
+2016-11-10 07:26:24,800 INFO waiting for npm, Xvfb, x11vnc, fluxbox to die
+2016-11-10 07:26:25,313 INFO stopped: fluxbox (exit status 0)
+2016-11-10 07:26:25,734 INFO stopped: x11vnc (exit status 2)
+2016-11-10 07:26:26,749 INFO stopped: Xvfb (exit status 0)
+2016-11-10 07:26:26,808 INFO stopped: npm (terminated by SIGTERM)
