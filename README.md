@@ -24,5 +24,7 @@ Data:
 * Store personal information in Google calendar for chonological reference
 * Backup personal data, Facebook export is insufficient and grossly incomplete
 
-
+Recruiting:
+Use feeds from LinkedIn for jobs, but then do the company research automatically.
+Search for things like "-company name- in the news"
 
