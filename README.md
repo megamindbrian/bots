@@ -23,9 +23,15 @@ Data:
 * Collect personal data from Yelp, WhatsApp, Instagram, Snapchat, Twitter, Facebook, LinkedIn, Skype, Banks, Airbnb messages/contact info for repeat customers
 * Store personal information in Google calendar for chonological reference
 * Backup personal data, Facebook export is insufficient and grossly incomplete
+* Backup Google History data
 
 Recruiting:
 * Use feeds from LinkedIn for jobs, but then do the company research automatically.
 * Search for things like "-company name- in the news", or "-company name- stock", or "-company name- investment"
 
+Arizona Outdoor Activities:
+* Connect tour guides to places to visit, https://www.visitphoenix.com/things-to-do/
+
+Automobile/Cars/Trucks:
+* Computerized repair shop
 
