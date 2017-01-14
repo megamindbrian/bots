@@ -20,7 +20,7 @@ Secrets:
 * Use square/keywhiz to store passwords so I never have to log in
 
 Data:
-* Collect personal data from Yelp, WhatsApp, Instagram, Snapchat, Twitter, Facebook, LinkedIn
+* Collect personal data from Yelp, WhatsApp, Instagram, Snapchat, Twitter, Facebook, LinkedIn, Skype, Banks, 
 * Store personal information in Google calendar for chonological reference
 * Backup personal data, Facebook export is insufficient and grossly incomplete
 
