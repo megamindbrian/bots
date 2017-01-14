@@ -25,6 +25,7 @@ Data:
 * Backup personal data, Facebook export is insufficient and grossly incomplete
 
 Recruiting:
-Use feeds from LinkedIn for jobs, but then do the company research automatically.
-Search for things like "-company name- in the news"
+* Use feeds from LinkedIn for jobs, but then do the company research automatically.
+* Search for things like "-company name- in the news", or "-company name- stock", or "-company name- investment"
+
 
