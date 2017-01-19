@@ -8,9 +8,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest",
-    "webdriverio": "latest"
+    "express"       : "latest",
+    "request"        : "latest",
+    "cheerio"        : "latest",
+    "webdriverio"   : "latest",
+	"firefox-profile" : "latest"
   }
 }

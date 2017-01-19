@@ -7,74 +7,133 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const app = express();
 const webdriverio = require('webdriverio');
+const FirefoxProfile = require('firefox-profile');
+const profilePath = './defaultProfile';
+var myProfile = new FirefoxProfile(profilePath);
+myProfile.setPreference("general.useragent.override", "custom-user-agent");
+var webdriverServer;
+var seleniumControlServer;
+myProfile.encoded(function (profile) {
+	webdriverServer = {
+		debug: true,
+		host: process.env.WEBDRIVER_HOST || 'localhost',
+		port: 4444,
+		pageLoadStrategy: 'eager',
+		desiredCapabilities: {
+			browserName: 'chrome',
+		},
+		capabilities: [{
+			browserName: 'firefox',
+			firefox_profile: profile
+		},
+		{
+			browserName: 'chrome',
+			chromeOptions: {
+				args: ['user-data-dir=' + profilePath]
+			}
+		}]
+	};
+	
+	if(webdriverServer.host != 'localhost') {
+		seleniumControlServer = {
+			host: webdriverServer.host,
+			port: 8080,
+			path: '/start',
+			accept: '*/*'
+		};
+	}
+});
+
 
 //const session = require('session');
 var client = null;
 
+function googleLogin() {
+	return this.isExisting('h1*=One account')
+		.then(function (is) {
+			if (is) {
+				console.log('google sign in required');
+				return this
+					.waitForVisible('input[name="Email"]')
+					.addValue('input[name="Email"]', 'email-secret')
+					.submitForm('#gaia_loginform')
+					.waitForVisible('input[name="Passwd"]', 5000)
+					.then(function () {
+						console.log('require password');
+					})
+					.catch(function () {
+						console.log('could not log in');
+					})
+					.addValue('input[name="Passwd"]', 'password-secret')
+					.submitForm('#gaia_loginform');
+			}
+		});
+}
 
-app.get('/sync-history', function (req, res) {
-    if (client != null) {
+function createClient(cb)
+{
+	if (client != null) {
         client.end();
         client = null;
     }
-    var options = {
-        host: 'selenium',
-        port: 8080,
-        path: '/start',
-        accept: '*/*'
-    };
+	console.log('Creating webdriver instance');
+	client = webdriverio.remote(webdriverServer);
+	//client.timeouts('script', 10000);
+	console.log('Initializing webdriver instance');
+	client.on('error', function (e) {
+		console.log(e);
+		this.endAll();
+		cb();
+	});
+	client.on('end', function () {
+		console.log('closing client');
+		cb();
+	});
+	client = client.init();
+	client.addCommand('googleLogin', googleLogin);
+}
 
-    // start the selenium server
-    http.get(options, function (getRes) {
+function logTimelineHistory() {    
+	console.log('Logging timeline history');
+	client
+		.url('https://www.google.com/maps/timeline')
+		.googleLogin()
+		.waitUntil(function () {
+			return client.url().then(function (url) {
+				return url.indexOf('timeline') > -1;
+			});
+		}, 20000)
+		.catch(function () {
+			console.log('Cannot reach timeline');
+		})
+		.pause(10000)
+		.endAll();
+}
 
-        getRes.on('data', function () {
-            client = webdriverio.remote({
-                host: 'selenium',
-                port: 4444,
-                browserName: 'chrome',
-                pageLoadStrategy: 'eager'
-            });
+app.get('/sync-history', function (req, res) {
 
-            client = client.init();
+	var syncHistory = function () {
+		createClient(function () {
+			res.send('all done with history');
+		});
+		logTimelineHistory();
+	};
 
-            client.addCommand('googleLogin', function googleLogin() {
-                return this.isExisting('h1*=One account')
-                    .then(function (is) {
-                        if (is) {
-                            console.log('google sign in required');
-                            return this
-                                .waitForVisible('input[name="Email"]')
-                                .addValue('input[name="Email"]', ‘email-secret’)
-                                .submitForm('#gaia_loginform')
-                                .waitForVisible('input[name="Passwd"]', 5000).then(function () {
-                                    console.log('require password');
-                                })
-                                .addValue('input[name="Passwd"]', ‘password-secret’)
-                                .submitForm('#gaia_loginform');
-                        }
-                    });
-            });
-            client
-                .url('https://www.google.com/maps/timeline')
-                .googleLogin()
-                .waitUntil(function () {
-                    return client.url().then(function (url) {
-                        return url.indexOf('timeline') > -1;
-                    });
-                }, 20000)
-                .pause(10000)
-                .endAll()
-                .then(function () {
-                    console.log('all done');
-                    res.send('all done');
-                });
-        });
+	if (webdriverServer.host != 'localhost') {
+		// start the selenium server
+		console.log('Connecting to control server: ' + seleniumControlServer.host);
+		http.get(seleniumControlServer, function (getRes) {
+			getRes.on('data', syncHistory);
 
-        getRes.on('error', function (err) {
-            res.send(err);
-        });
-
-    });
+			getRes.on('error', function (err) {
+				res.send(err);
+			});
+		});
+	}
+	else {
+		syncHistory();
+	}
+	
 });
 
 /*

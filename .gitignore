@@ -1,3 +1,4 @@
 bots/.idea
 node-selenium/node_modules
 *mozprofile*
+bots/node_modules
