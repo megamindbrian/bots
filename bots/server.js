@@ -8,7 +8,7 @@ const cheerio = require('cheerio');
 const app = express();
 const webdriverio = require('webdriverio');
 const FirefoxProfile = require('firefox-profile');
-const profilePath = './defaultProfile';
+const profilePath = __dirname + '/defaultProfile';
 var myProfile = new FirefoxProfile(profilePath);
 myProfile.setPreference("general.useragent.override", "custom-user-agent");
 var webdriverServer;
@@ -21,16 +21,16 @@ myProfile.encoded(function (profile) {
 		pageLoadStrategy: 'eager',
 		desiredCapabilities: {
 			browserName: 'chrome',
+			chromeOptions: {
+				args: ['user-data-dir=' + profilePath]
+			}
 		},
 		capabilities: [{
 			browserName: 'firefox',
 			firefox_profile: profile
 		},
 		{
-			browserName: 'chrome',
-			chromeOptions: {
-				args: ['user-data-dir=' + profilePath]
-			}
+			browserName: 'chrome'
 		}]
 	};
 	
@@ -112,6 +112,7 @@ function logTimelineHistory() {
 
 app.get('/sync-history', function (req, res) {
 
+	// special case for nested function, just because this procedure calls it from two different places
 	var syncHistory = function () {
 		createClient(function () {
 			res.send('all done with history');
@@ -119,6 +120,7 @@ app.get('/sync-history', function (req, res) {
 		logTimelineHistory();
 	};
 
+	// determine if we should initialize using the selenium service controller in Docker or just connected to selenium directly
 	if (webdriverServer.host != 'localhost') {
 		// start the selenium server
 		console.log('Connecting to control server: ' + seleniumControlServer.host);
