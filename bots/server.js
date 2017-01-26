@@ -9,8 +9,8 @@ const webdriverio = require('webdriverio');
 const FirefoxProfile = require('firefox-profile');
 const profilePath = __dirname + '/defaultProfile';
 const zlib = require('zlib');
-const fs = require('fs');
 const crypto = require('crypto');
+const Readable = require('stream').Readable;
 var passwordsPassword = 'd6F3Efeq';
 var myProfile = new FirefoxProfile(profilePath);
 myProfile.setPreference("general.useragent.override", "custom-user-agent");
@@ -18,27 +18,58 @@ var webdriverServer;
 var seleniumControlServer;
 
 var passAdd = false;
-process.argv.forEach(function (val, index, array) {
-	if(val.indexOf('--add-pass') > -1) {
-		passAdd = val.substr(11);
+for(var index in process.argv) {
+	if(process.argv.hasOwnProperty(index)) {
+		var val = process.argv[index];
+		if(val.indexOf('--add-pass') > -1) {
+			passAdd = val.substr(11);
+		}
 	}
-});
+}
 
 
 if(passAdd) {
-	var r = fs.createReadStream('passwords.json');
-	var decrypt = crypto.createDecipher('aes-256-ctr', password)
-	var unzip = zlib.createGunzip();
-	var passwordJson = r.pipe(decrypt).pipe(unzip);
-	var passwords = JSON.parse(passwordJson);
-	passwords[passwords.length] = {
-		
-	};
-	var passwordString = JSON.stringify(passwords);
-	var encrypt = crypto.createCipher('aes-256-ctr', password);
-	var zip = zlib.createGzip();
-	var w = fs.createWriteStream('passwords-new.json');
-	passwordString.pipe(zip).pipe(encrypt).pipe(w);
+	var passwords;
+	if(fs.existsSync('passwords.json')) {
+		var r = fs.createReadStream('passwords.json');
+		var decrypt = crypto.createDecipher('aes-256-ctr', passwordsPassword)
+		var unzip = zlib.createGunzip();
+		var output = new Readable();
+		r.pipe(decrypt).pipe(unzip).pipe(output);
+		passwords = JSON.parse(output.toString());
+	}
+	else {
+		passwords = [];
+	}
+	var passwordAddJson;
+	if(passAdd.substr(0, 1) == '{') {
+		passwordAddJson = JSON.parse(passAdd);
+	}
+	else if(fs.existsSync(passAdd)) {
+		var content = fs.readFileSync(passAdd);
+		passwordAddJson = JSON.parse(content);
+	}
+	else {
+		passwordAddJson = JSON.parse(Base64.decode(passAdd));
+	}
+	if(typeof passwordAddJson == 'object') {
+		passwordAddJson.added = new Date();
+		passwords[passwords.length] = passwordAddJson
+		var passwordString = new Buffer(JSON.stringify(passwords));
+		var encrypt = crypto.createCipher('aes-256-ctr', passwordsPassword);
+		var zip = zlib.createGzip();
+		var w = fs.createWriteStream('passwords-new.json');
+		var stream = new Readable();
+		stream.push(passwordString);
+		stream.push(null);
+		stream.pipe(zip).pipe(encrypt).pipe(w);
+		fs.renameSync('passwords.json', 'passwords-backup.json');
+		fs.renameSync('passwords-new.json', 'passwords.json');
+		fs.unlinkSync('passwords-backup.json');
+		//if(fs.existsSync(passAdd)) {
+		//	fs.unlinkSync(passAdd);
+		//}
+	}
 	process.exit();
 }
 
