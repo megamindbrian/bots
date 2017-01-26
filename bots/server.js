@@ -3,16 +3,46 @@
 const http = require('http');
 const express = require('express');
 const fs = require('fs');
-//const request = require('request');
 const cheerio = require('cheerio');
 const app = express();
 const webdriverio = require('webdriverio');
 const FirefoxProfile = require('firefox-profile');
 const profilePath = __dirname + '/defaultProfile';
+const zlib = require('zlib');
+const fs = require('fs');
+const crypto = require('crypto');
+var passwordsPassword = 'd6F3Efeq';
 var myProfile = new FirefoxProfile(profilePath);
 myProfile.setPreference("general.useragent.override", "custom-user-agent");
 var webdriverServer;
 var seleniumControlServer;
+
+var passAdd = false;
+process.argv.forEach(function (val, index, array) {
+	if(val.indexOf('--add-pass') > -1) {
+		passAdd = val.substr(11);
+	}
+});
+
+
+if(passAdd) {
+	var r = fs.createReadStream('passwords.json');
+	var decrypt = crypto.createDecipher('aes-256-ctr', password)
+	var unzip = zlib.createGunzip();
+	var passwordJson = r.pipe(decrypt).pipe(unzip);
+	var passwords = JSON.parse(passwordJson);
+	passwords[passwords.length] = {
+		
+	};
+	var passwordString = JSON.stringify(passwords);
+	var encrypt = crypto.createCipher('aes-256-ctr', password);
+	var zip = zlib.createGzip();
+	var w = fs.createWriteStream('passwords-new.json');
+	passwordString.pipe(zip).pipe(encrypt).pipe(w);
+	process.exit();
+}
+
+
 myProfile.encoded(function (profile) {
 	webdriverServer = {
 		debug: true,
@@ -44,8 +74,6 @@ myProfile.encoded(function (profile) {
 	}
 });
 
-
-//const session = require('session');
 var client = null;
 
 function googleLogin() {
