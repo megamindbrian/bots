@@ -24,19 +24,45 @@ for(var index in process.argv) {
 		if(val.indexOf('--add-pass') > -1) {
 			passAdd = val.substr(11);
 		}
+		if(val.indexOf('--password') > -1) {
+			passwordsPassword = val.substr(11);
+		}
 	}
 }
 
+function encrypt(text){
+  var cipher = crypto.createCipher('aes-256-ctr', passwordsPassword);
+  var crypted = cipher.update(text, 'latin1', 'hex');
+  crypted += cipher.final('hex');
+  return crypted;
+}
+ 
+function decrypt(text){
+  var decipher = crypto.createDecipher('aes-256-ctr', passwordsPassword);
+  var dec = decipher.update(text, 'hex', 'latin1');
+  dec += decipher.final('latin1');
+  return dec;
+}
 
 if(passAdd) {
 	var passwords;
 	if(fs.existsSync('passwords.json')) {
-		var r = fs.createReadStream('passwords.json');
-		var decrypt = crypto.createDecipher('aes-256-ctr', passwordsPassword)
-		var unzip = zlib.createGunzip();
-		var output = new Readable();
-		r.pipe(decrypt).pipe(unzip).pipe(output);
-		passwords = JSON.parse(output.toString());
+		var file = fs.readFileSync('passwords.json', 'latin1');
+		if(file.length > 0) {
+			try {
+				console.log('reading encrypted passwords file');
+				var decrypted = decrypt(file);
+				var uncompressed = zlib.gunzipSync(Buffer.from(decrypted, 'base64'));
+				passwords = JSON.parse(uncompressed);
+			}
+			catch (e) {
+				console.log(e);
+				passwords = [];
+			}
+		}
+		else {
+			passwords = [];
+		}
 	}
 	else {
 		passwords = [];
@@ -55,20 +81,18 @@ if(passAdd) {
 	if(typeof passwordAddJson == 'object') {
 		passwordAddJson.added = new Date();
 		passwords[passwords.length] = passwordAddJson
-		var passwordString = new Buffer(JSON.stringify(passwords));
-		var encrypt = crypto.createCipher('aes-256-ctr', passwordsPassword);
-		var zip = zlib.createGzip();
-		var w = fs.createWriteStream('passwords-new.json');
-		var stream = new Readable();
-		stream.push(passwordString);
-		stream.push(null);
-		stream.pipe(zip).pipe(encrypt).pipe(w);
+		var passwordString = JSON.stringify(passwords);
+		var compressed = zlib.gzipSync(passwordString).toString('base64');
+		var encrypted = encrypt(compressed);
+		console.log('saving encrypted file');
+		fs.writeFileSync('passwords-new.json', encrypted);
 		fs.renameSync('passwords.json', 'passwords-backup.json');
 		fs.renameSync('passwords-new.json', 'passwords.json');
 		fs.unlinkSync('passwords-backup.json');
-		//if(fs.existsSync(passAdd)) {
-		//	fs.unlinkSync(passAdd);
-		//}
+		if(fs.existsSync(passAdd)) {
+			console.log('deleting input file: ' + passAdd);
+			fs.unlinkSync(passAdd);
+		}
 	}
 	process.exit();
 }
