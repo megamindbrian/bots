@@ -79,6 +79,11 @@ function encryptSet(set) {
 	return resultSet;
 }
 
+// load password from a file so it doesn't show up in process list
+if(fs.existsSync(passwordsPassword)) {
+	passwordsPassword = fs.readFileSync(passwordsPassword, 'latin1').trim();
+}
+
 // load existing passwords file
 var passwords;
 if(fs.existsSync('passwords.json')) {
@@ -124,7 +129,7 @@ if(passAdd) {
 			});
 		}
 		passwords[passwords.length] = encrypted;
-		var passwordString = JSON.stringify(passwords);
+		var passwordString = JSON.stringify(passwords, null, 4);
 		//var compressed = zlib.gzipSync(passwordString).toString('base64');
 		console.log('saving encrypted file');
 		fs.writeFileSync('passwords-new.json', passwordString);
@@ -198,6 +203,30 @@ function googleLogin() {
 		});
 }
 
+function linkedinLogin() {
+	return this.isExisting('legend*=Sign in')
+		.then(function (is) {
+			if (is) {
+				console.log('linkedin sign in required');
+				var credentials = decryptSet(passwords.filter(function (el) {
+					return el.host == 'linkedin.com';
+				})[0] || {});
+				return this
+					.waitForVisible('input[name="session_key"]')
+					.addValue('input[name="session_key"]', credentials.session_key)
+					.waitForVisible('input[name="session_password"]', 5000)
+					.then(function () {
+						console.log('require password');
+					})
+					.catch(function () {
+						console.log('could not log in');
+					})
+					.addValue('input[name="session_password"]', credentials.session_password)
+					.submitForm('#btn-primary');
+			}
+		});
+}
+
 function createClient(cb)
 {
 	if (client != null) {
@@ -219,6 +248,7 @@ function createClient(cb)
 	});
 	client = client.init();
 	client.addCommand('googleLogin', googleLogin);
+	client.addCommand('linkedinLogin', linkedinLogin);
 }
 
 function logTimelineHistory() {    
@@ -239,15 +269,38 @@ function logTimelineHistory() {
 		.endAll();
 }
 
-app.get('/sync-history', function (req, res) {
+function logLinkedInHistory() {    
+	console.log('Logging linkedin history');
+	client
+		.url('https://www.linkedin.com/uas/login')
+		.linkedinLogin()
+		.waitUntil(function () {
+			return client.getUrl().then(function(url) {
+				return url.indexOf('login') == -1;
+			});
+		}, 20000, '')
+		.catch(function (e) {
+			console.log(e);
+			console.log('Cannot reach messaging');
+		})
+		.pause(10000)
+		.endAll();
+}
 
-	console.log('received request for history sync');
+app.get('/sync/:sync', function (req, res) {
+
+	console.log('received request for ' + req.params.sync + ' sync');
 	// special case for nested function, just because this procedure calls it from two different places
-	var syncHistory = function () {
+	var sync = function () {
 		createClient(function () {
-			res.send('all done with history');
+			res.send('all done with ' + req.params.sync);
 		});
-		logTimelineHistory();
+		if(req.params.sync == 'history') {
+			logTimelineHistory();
+		}
+		else if (req.params.sync == 'linkedin') {
+			logLinkedInHistory();
+		}
 	};
 
 	// determine if we should initialize using the selenium service controller in Docker or just connected to selenium directly
@@ -255,7 +308,9 @@ app.get('/sync-history', function (req, res) {
 		// start the selenium server
 		console.log('Connecting to control server: ' + seleniumControlServer.host);
 		http.get(seleniumControlServer, function (getRes) {
-			getRes.on('data', syncHistory);
+		
+			// wait for response from selenium server
+			getRes.on('data', sync);
 
 			getRes.on('error', function (err) {
 				res.send(err);
@@ -263,7 +318,7 @@ app.get('/sync-history', function (req, res) {
 		});
 	}
 	else {
-		syncHistory();
+		sync();
 	}
 	
 });
