@@ -13,34 +13,24 @@ app.get('/start', function (req, res) {
             myChild.kill();
             myChild = null;
         }
-        pkill.full('firefox');
+        pkill.full('chrome');
         pkill.full('selenium-standalone');
         lastLaunch = null;
         selenium.install({
             version: '3.0.1',
-            logger: function (message) { console.log(message); },
-            drivers: {
-                firefox: {
-                    version: '0.11.1'
-                }
-            }
+            logger: function (message) { console.log(message); }
         }, function (err) {
             console.log(err);
             selenium.start({
                 version: '3.0.1',
-                spawnCb: function () { console.log('spawned'); },
-                drivers: {
-                    firefox: {
-                        version: '0.11.1'
-                    }
-                }
+                spawnCb: function () { console.log('spawned'); }
             }, function (err, child) {
                 myChild = child;
                 child.stderr.on('data', function(data){
-                    if(data.indexOf('Selenium Server is up and running')) {
+                    console.log(data.toString());
+                    if(data.indexOf('Selenium Server is up and running') > -1) {
                         res.send('started');
                     }
-                    console.log(data.toString());
                 });
                 if(lastLaunch == null) {
                     lastLaunch = new Date();
@@ -56,4 +46,4 @@ app.get('/start', function (req, res) {
 
 
 app.listen(8080);
-console.log('Running on http://localhost:' + 8080);
+console.log('Daemon: Running on http://localhost:' + 8080);

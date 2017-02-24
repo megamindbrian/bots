@@ -1,0 +1,75 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+
+<body>
+<header>
+    <input type="input" value="" placeholder="Search" />
+    <button type="button">Sync</button>
+</header>
+<aside>
+    <ol>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#processes">Processes</a></li>
+    </ol>
+</aside>
+
+<div id="contacts" data-sync="syncGoogleContacts">
+    <h1>Contacts</h1>
+    <h2>#</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th><th>Email</th><th>Phone</th><th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<div id="processes" data-sync="syncProcesses">
+    <h1>Processes</h1>
+    <h2 class="processes-cron">Cron</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th><th>Status</th><th>Time</th><th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <h2 class="processes-pipes">Pipes</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th><th>Status</th><th>Time</th><th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <h2 class="processes-tabs">Tabs</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th><th>Status</th><th>Time</th><th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script type="application/javascript" src="/socket.io/socket.io.js"></script>
+<script type="application/javascript" src="/jquery-3.1.1.min.js"></script>
+<script type="application/javascript" src="/main.js"></script>
+</body>
+</html>

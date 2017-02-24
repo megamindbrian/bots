@@ -1,4 +1,4 @@
-FROM selenium/standalone-firefox-debug
+FROM selenium/standalone-chrome-debug
 MAINTAINER Brian Cullinan "megamindbrian@gmail.com"
 
 USER root
@@ -37,6 +37,7 @@ ADD x11vnc.conf /etc/supervisor/conf.d/
 
 # Bundle app source
 VOLUME /usr/src
+VOLUME /usr/profile
 
 EXPOSE 8080
 EXPOSE 7055

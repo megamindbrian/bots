@@ -1,0 +1,129 @@
+body, html
+{
+    height:100%;
+    width:100%;
+    overflow:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    color:#666;
+    font-family: sans-serif;
+}
+
+header, aside
+{
+    background: #DDD;
+}
+
+aside
+{
+    height:100%;
+    position:fixed;
+    width:250px;
+    top:0;
+    left:0;
+    right:auto;
+    bottom:0;
+    z-index: 1000;
+    padding-top:60px;
+}
+
+aside ol
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+aside ol li a
+{
+    padding:10px 20px;
+    color:inherit;
+    display:block;
+    text-decoration: none;
+}
+
+aside ol li a:hover
+{
+    background:#EEE;
+}
+
+header
+{
+    top:0;
+    position:fixed;
+    left:0;
+    width:100%;
+    right:0;
+    height: 60px;
+    z-index:1001;
+    padding-left:250px;
+}
+
+header button
+{
+    font-size:16px;
+    border:1px solid #DDD;
+    border-radius: 2px;
+    background:#eee;
+    padding:10px;
+    margin:10px;
+    color:#666;
+    outline:none;
+}
+
+header input
+{
+    background:#eee;
+    border:1px solid #DDD;
+    border-radius: 2px;
+    padding:10px;
+    margin:10px;
+    font-size:16px;
+    outline: none;
+    color:#666;
+}
+
+body > div
+{
+    padding-top:60px;
+    padding-left:250px;
+    display:none;
+}
+
+body > div.active
+{
+    display:block;
+}
+
+h1
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    z-index:1002;
+    margin:10px 0;
+    padding-left:20px;
+}
+
+h2
+{
+    margin:0;
+    position:absolute;
+    padding-left:10px;
+}
+
+table
+{
+    width:100%;
+    border:none;
+    border-spacing: 0;
+}
+
+th
+{
+    background: #eee;
+    padding:10px;
+}

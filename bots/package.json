@@ -5,13 +5,14 @@
   "author": "Brian Cullinan <megamindbrian@gmail.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js --password=pass.txt"
   },
   "dependencies": {
     "express"       : "latest",
-    "request"        : "latest",
-    "cheerio"        : "latest",
+    "request"       : "latest",
+    "cheerio"       : "latest",
     "webdriverio"   : "latest",
-	"firefox-profile" : "latest"
+    "socket.io"     : "latest",
+    "fast-csv"      : "latest"
   }
 }

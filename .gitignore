@@ -5,3 +5,5 @@ bots/node_modules
 bots/defaultProfile
 npm-debug.log
 pass.txt
+.idea
+*.pid

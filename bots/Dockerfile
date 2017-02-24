@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:latest
 MAINTAINER Brian Cullinan "megamindbrian@gmail.com"
 
 ENV HOME /root
@@ -51,10 +51,11 @@ ADD cron.conf /etc/supervisor/conf.d/
 # expose useful ports
 EXPOSE 3690
 EXPOSE 8080
-EXPOSE 4444
 
 # connect data
 VOLUME /usr/src
+VOLUME /usr/profile
+VOLUME /data/contacts
 VOLUME /var/svn
 
 #CMD [ "npm", "start" ]

@@ -25,6 +25,6 @@ app.get('/colors', function (req, res) {
 exports.getRandomColor = getRandomColor;
 
 app.listen(8080);
-console.log('Running on http://localhost:' + 8080);
+console.log('Daemon: Running on http://localhost:' + 8080);
 
 
