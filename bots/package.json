@@ -13,6 +13,6 @@
     "cheerio"       : "latest",
     "webdriverio"   : "latest",
     "socket.io"     : "latest",
-    "fast-csv"      : "latest"
+    "csv"           : "latest"
   }
 }

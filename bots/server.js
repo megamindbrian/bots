@@ -18,6 +18,14 @@ var webdriverServer = null;
 var seleniumControlServer = null;
 var client = null;
 var modules = ['google', 'linkedin', 'processes'];
+var tabCache = [];
+var pipeCache = [];
+
+const clearTabs = {
+    type:'processes',
+    clear: true,
+    processes: 'Tabs'
+};
 
 function createClient(cb) {
 	if (client != null) {
@@ -36,6 +44,66 @@ function createClient(cb) {
         console.log('Daemon: Closing browser');
 		cb();
 	});
+	client.on('result', function (result) {
+
+	    try {
+            console.log(result.requestOptions.uri.href);
+
+            if (result.requestOptions.uri.href.indexOf('/window_handles') > -1) {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+                tabCache = result.body.value.map(function (i) {
+                    return {
+                        type: 'processes',
+                        id: i,
+                        name: '',
+                        status: 'inactive',
+                        processes: 'Tabs'
+                    };
+                });
+                io.sockets.in('syncProcesses').emit('data', tabCache);
+            }
+            else if (result.requestOptions.uri.href.indexOf('/window_handle') > -1) {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+                for (var t = 0; t < tabCache.length; t++) {
+                    if (tabCache[t].id == result.body.value) {
+                        tabCache[t].status = 'active';
+                        io.sockets.in('syncProcesses').emit('data', tabCache);
+                        break;
+                    }
+                }
+            }
+            else if (result.requestOptions.uri.href.indexOf('/url') > -1) {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+                for (var t2 = 0; t2 < tabCache.length; t2++) {
+                    if (tabCache[t2].status == 'active') {
+                        tabCache[t2].url = result.body.value;
+                        tabCache[t2].name = tabCache[t2].title + ' | ' + tabCache[t2].url;
+                        io.sockets.in('syncProcesses').emit('data', tabCache);
+                        break;
+                    }
+                }
+                client.getTitle();
+            }
+            else if (result.requestOptions.uri.href.indexOf('/title') > -1) {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+                for (var t3 = 0; t3 < tabCache.length; t3++) {
+                    if (tabCache[t3].status == 'active') {
+                        tabCache[t3].title = result.body.value;
+                        tabCache[t3].name = tabCache[t3].title + ' | ' + tabCache[t3].url;
+                        io.sockets.in('syncProcesses').emit('data', tabCache);
+                        break;
+                    }
+                }
+            }
+            else if (result.requestOptions.uri.href.indexOf('/session/') > -1
+                && result.requestOptions.method == 'DELETE') {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+            }
+        }
+        catch (e) {
+	        console.log(e);
+        }
+    });
 
     clientInit();
 }
@@ -110,12 +178,38 @@ function createProfile() {
     }
 }
 
+function emitSockets()
+{
+    io.sockets.in('syncProcesses').emit('data', {
+        type:'processes',
+        clear: true,
+        processes: 'Pipes'
+    });
+    var sockets = [];
+    for(var s in io.sockets.sockets) {
+        if(io.sockets.sockets.hasOwnProperty(s)) {
+            sockets[sockets.length] = {
+                type: 'processes',
+                processes: 'Pipes',
+                id: io.sockets.connected[s].id,
+                name: io.sockets.connected[s].handshake.address,
+                status: io.sockets.connected[s].connected ? 'connected' : 'disconnected',
+                time: io.sockets.connected[s].handshake.time
+            }
+        }
+    }
+    pipeCache = sockets;
+    io.sockets.in('syncProcesses').emit('data', pipeCache);
+}
+
 io.on('connection', function(socket){
 
     socket.on('sync', function (room) {
         console.log('Daemon: Received request for ' + room + ' sync');
 
         socket.join(room);
+        emitSockets();
+
         if(webdriverServer == null) {
             createProfile();
         }
@@ -123,7 +217,6 @@ io.on('connection', function(socket){
         startSeleniumServer(function () {
             createClient(function () {
                 console.log('Daemon: All done with ' + room);
-                io.sockets.in(room).emit('clear', {type: 'processes', processes: 'Tabs'});
             });
             console.log('Daemon: Client initialized, running ' + room);
             client[room](function (data) {
@@ -133,8 +226,9 @@ io.on('connection', function(socket){
         });
     });
 
-    socket.on('done', function (room) {
-        socket.leave(room);
+    socket.on('done', function () {
+        socket.disconnect();
+        emitSockets();
     });
 
 });

@@ -7,3 +7,4 @@ npm-debug.log
 pass.txt
 .idea
 *.pid
+supervisord.log

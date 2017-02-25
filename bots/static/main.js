@@ -21,25 +21,29 @@ $(document).ready(function () {
     body.on('click', 'header button', function () {
         socket.emit('sync', body.find('div:visible').data('sync'));
     });
+    socket.emit('sync', 'syncProcesses');
+    // TODO: leave rooms when away from tab, rejoin when switching to tab
+    window.onbeforeunload = function() {
+        socket.emit('done');
+    };
 
     function processObj(data)
     {
         if(data && typeof data.type != 'undefined') {
             var className = data.type + '-' + (data[data.type] || '').toLowerCase();
             var container = $('#' + data.type);
-            var fields = container.find('table thead th').map(function () { return $(this).text().toLowerCase(); }).toArray();
-            var row = [];
-            for(var i in data) {
-                if(data.hasOwnProperty(i)) {
-                    row[fields.indexOf(i)] = data[i];
-                }
-            }
             var title = container.find('h2.' + className);
+            if(title.length > 0 && data.clear) {
+                title.next('table').find('tbody tr').remove();
+                return;
+            }
+            var fields = title.next('table').find('thead th').map(function () { return $(this).text().toLowerCase(); }).toArray();
             if(title.length == 0) {
-                var newSection = $('<h2>' + data.type + '</h2><table><tbody></tbody></table>').addClass(className);
-                container.find('table head').first().clone().prependTo(newSection.find('table'));
+                var newSection = $('<h2>' + data[data.type] + '</h2><table><tbody></tbody></table>').addClass(className);
+                container.find('table thead').first().clone().prependTo(newSection.filter('table'));
                 container.append(newSection);
             }
+            var row = fields.map(function (i) { return typeof data[i] != 'undefined' ? data[i] : ''; });
             $('<tr><td>' + row.join('</td><td>') + '</td></tr>').appendTo(title.next('table').find('tbody'));
         }
     }
@@ -53,12 +57,5 @@ $(document).ready(function () {
         else {
             processObj(data);
         }
-    });
-
-    socket.on('clear', function (data) {
-        var container = $('#' + data.type);
-        var className = data.type + '-' + (data[data.type] || '').toLowerCase();
-        var title = container.find('h2.' + className);
-        title.next('table').find('tbody tr').remove();
     });
 });

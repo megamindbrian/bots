@@ -1,4 +1,4 @@
-const csv = require('fast-csv');
+const csv = require('csv');
 const fs = require('fs');
 
 var commands = {};
@@ -64,15 +64,37 @@ module.exports = function (getCredentials) {
 
     function syncGoogleContacts(cb) {
         if(fs.existsSync('/data/contacts/google.csv')) {
+            // TODO check last update time
             console.log('Google: Loading contacts from cache');
-            csv
-                .fromPath('/data/contacts/google.csv')
-                .on('data', function (data) {
-                    cb(data)
-                })
-                .on('end', function () {
-                    console.log('Google: Done syncing contacts');
+            try {
+                var options = {
+                    relax: true,
+                    columns: true,
+                    relax_column_count: true,
+                    skip_empty_lines: true
+                };
+                var parser = csv.parse(options, function (err, data) {
+                    if(err) { console.log(err); }
+                    var rows = data.map(function (data) {
+                        return {
+                            type: 'contacts',
+                            contacts: data['Name'].substr(0, 1).match(/[a-z]/ig)
+                                ? data['Name'].substr(0, 1).toUpperCase()
+                                : '_',
+                            name: data['Name'],
+                            email: data['E-mail 1 - Value'],
+                            phone: data['Phone 1 - Value'],
+                            title: data['Organization 1 - Name']
+                        };
+                    });
+                    cb(rows);
                 });
+                fs.createReadStream('/data/contacts/google.csv', {encoding: 'utf16le'}).pipe(parser);
+            }
+            catch (e)
+            {
+                console.log(e);
+            }
         }
 
         return this.getGoogleContacts();
