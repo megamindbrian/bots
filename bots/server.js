@@ -34,7 +34,6 @@ function createClient(cb) {
     }
     console.log('Daemon: Initializing webdriver instance on ' + webdriverServer.host);
 	client = webdriverio.remote(webdriverServer);
-	//client.timeouts('script', 10000);
 	client.on('error', function (e) {
 		console.log(e);
 		this.endAll();
@@ -47,7 +46,7 @@ function createClient(cb) {
 	client.on('result', function (result) {
 
 	    try {
-            console.log(result.requestOptions.uri.href);
+            //console.log(result.requestOptions.method + ' ' + result.requestOptions.uri.href + ' = ' + JSON.stringify(result.body.value, null, 4));
 
             if (result.requestOptions.uri.href.indexOf('/window_handles') > -1) {
                 io.sockets.in('syncProcesses').emit('data', clearTabs);
@@ -97,7 +96,20 @@ function createClient(cb) {
             }
             else if (result.requestOptions.uri.href.indexOf('/session/') > -1
                 && result.requestOptions.method == 'DELETE') {
+                tabCache = [];
                 io.sockets.in('syncProcesses').emit('data', clearTabs);
+            }
+            else if (result.requestOptions.uri.href.match(/\/session$/)
+                && result.requestOptions.method == 'POST') {
+                io.sockets.in('syncProcesses').emit('data', clearTabs);
+                tabCache[tabCache.length] = {
+                    type: 'processes',
+                    id: result.body.value['webdriver.remote.sessionid'],
+                    name: '',
+                    status: 'active',
+                    processes: 'Tabs'
+                };
+                io.sockets.in('syncProcesses').emit('data', tabCache);
             }
         }
         catch (e) {
@@ -150,13 +162,17 @@ function createProfile() {
         debug: true,
         host: process.env.WEBDRIVER_HOST || 'localhost',
         port: 4444,
-        pageLoadStrategy: 'eager'
+        pageLoadStrategy: 'eager',
+        connectionRetryTimeout: 10000
     };
 
     if(webdriverServer.host != 'localhost') {
         webdriverServer.desiredCapabilities = {
             browserName: 'chrome',
             chromeOptions: {
+                prefs: {
+                    'download.default_directory' : '/data/downloads'
+                },
                 args: ['user-data-dir=' + profilePath]
             }
         };
@@ -186,23 +202,38 @@ function emitSockets()
         processes: 'Pipes'
     });
     var sockets = [];
+    var rooms = io.sockets.adapter.rooms;
     for(var s in io.sockets.sockets) {
         if(io.sockets.sockets.hasOwnProperty(s)) {
-            sockets[sockets.length] = {
+            var socket = {
                 type: 'processes',
                 processes: 'Pipes',
                 id: io.sockets.connected[s].id,
-                name: io.sockets.connected[s].handshake.address,
+                address: io.sockets.connected[s].handshake.address,
                 status: io.sockets.connected[s].connected ? 'connected' : 'disconnected',
-                time: io.sockets.connected[s].handshake.time
+                time: io.sockets.connected[s].handshake.time,
+                rooms: []
+            };
+            for(var r in rooms) {
+                if(rooms.hasOwnProperty(r)) {
+                    if(rooms[r].sockets[socket.id]) {
+                        socket.rooms[socket.rooms.length] = r;
+                    }
+                }
             }
+            socket.name = socket.address + ' | ' + socket.rooms.join(', ');
+            sockets[sockets.length] = socket;
         }
     }
     pipeCache = sockets;
     io.sockets.in('syncProcesses').emit('data', pipeCache);
 }
 
-io.on('connection', function(socket){
+io.on('connection', function(socket) {
+
+    console.log('Daemon: Client connected from ' + socket.handshake.address);
+    socket.join('syncProcesses');
+    emitSockets();
 
     socket.on('sync', function (room) {
         console.log('Daemon: Received request for ' + room + ' sync');
@@ -222,7 +253,10 @@ io.on('connection', function(socket){
             client[room](function (data) {
                 console.log('Daemon: Sending results');
                 io.sockets.in(room).emit('data', data);
-            });
+            })
+                .catch(function (e) {
+                    console.log(e);
+                });
         });
     });
 

@@ -56,6 +56,7 @@ EXPOSE 8080
 VOLUME /usr/src
 VOLUME /usr/profile
 VOLUME /data/contacts
+VOLUME /data/downloads
 VOLUME /var/svn
 
 #CMD [ "npm", "start" ]

@@ -13,6 +13,8 @@
     "cheerio"       : "latest",
     "webdriverio"   : "latest",
     "socket.io"     : "latest",
-    "csv"           : "latest"
+    "csv"           : "latest",
+    "ical"          : "latest",
+    "ical-generator": "latest"
   }
 }

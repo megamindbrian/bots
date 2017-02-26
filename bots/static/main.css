@@ -135,6 +135,11 @@ table
     border-spacing: 0;
 }
 
+td, th
+{
+    width:20%;
+}
+
 table td:first-child,
 table th:first-child
 {
@@ -145,4 +150,9 @@ th
 {
     background: #eee;
     padding:10px;
+}
+
+td
+{
+    padding:5px 10px;
 }

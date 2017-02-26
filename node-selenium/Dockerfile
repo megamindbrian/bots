@@ -38,6 +38,7 @@ ADD x11vnc.conf /etc/supervisor/conf.d/
 # Bundle app source
 VOLUME /usr/src
 VOLUME /usr/profile
+VOLUME /data/downloads
 
 EXPOSE 8080
 EXPOSE 7055
