@@ -8,3 +8,4 @@ pass.txt
 .idea
 *.pid
 supervisord.log
+new-passwords.json

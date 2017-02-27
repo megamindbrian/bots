@@ -143,7 +143,13 @@ td, th
 table td:first-child,
 table th:first-child
 {
-    width:40%;
+    width:35%;
+}
+
+table td:nth-child(2),
+table th:nth-child(2)
+{
+    width:25%;
 }
 
 th
