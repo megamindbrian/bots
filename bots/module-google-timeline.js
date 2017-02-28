@@ -1,3 +1,4 @@
+const standard = require('./standard.js');
 const path = require( 'path' );
 const csv = require('csv');
 const fs = require('fs');
@@ -179,63 +180,32 @@ module.exports = function (getCredentials) {
     function syncGoogleTimeline(cb)
     {
         // load timeline cache
-        if(fs.existsSync('/data/timeline')) {
-            fs.readdir('/data/timeline', function (err, files) {
-                if (err) {
-                    console.error("Could not list the directory.", err);
-                }
-                files.forEach(function (file) {
-                    // Make one pass and make the file complete
-                    if (!file.match(/timeline-[0-9]{1,2}[a-z]{3}[0-9]{2}\.json/i)) {
-                        return;
-                    }
-                    var fromPath = path.join('/data/timeline', file);
-                    var events = JSON.parse(fs.readFileSync(fromPath, 'utf8'));
-                    for (var e = 0; e < events.length; e++) {
-                        if (typeof timelineCache[events[e].timeline] == 'undefined') {
-                            timelineCache[events[e].timeline] = [events[e]];
-                        }
-                        else {
-                            timelineCache[events[e].timeline] = timelineCache[events[e].timeline]
-                                .filter(function (i) {
-                                    return i.time != events[e].time;
-                                })
-                                .concat([events[e]]);
-                        }
-                    }
+        timelineCache = standard.loadCache('timeline', function (a, b) {
+            return a.time != b.time;
+        });
+        for (var c in timelineCache) {
+            if (timelineCache.hasOwnProperty(c)) {
+                cb({
+                    type: 'timeline',
+                    timeline: c,
+                    clear: true
                 });
-                for(var c in timelineCache) {
-                    if(timelineCache.hasOwnProperty(c)) {
-                        cb({
-                            type: 'timeline',
-                            timeline: c,
-                            clear: true
-                        });
-                        cb(timelineCache[c]);
-                    }
-                }
-            });
+                cb(timelineCache[c]);
+            }
         }
 
         return this
             .getGoogleTimeline(cb)
             //.downloadGoogleLocations()
             .endAll()
+            .then(standard.saveCache(timelineCache, 'timeline'))
             .then(function () {
-                // keep a cache of locations
-                if(fs.existsSync('/data/timeline')) {
-                    for (var e in timelineCache) {
-                        if (timelineCache.hasOwnProperty(e)) {
-                            var toPath = path.join('/data/timeline', 'timeline-' + e + '.json');
-                            fs.writeFileSync(toPath, JSON.stringify(timelineCache[e], null, 2), 'utf8');
-                        }
-                    }
-                }
-            //    fs.createReadStream('/data/downloads/google.csv')
-            //        .pipe(fs.createWriteStream('/data/contacts/google.csv'))
-            //        .on('finish', function () {
-            //            fs.unlinkSync('/data/downloads/google.csv')
-            //        });
+                //    fs.createReadStream('/data/downloads/google.csv')
+                //        .pipe(fs.createWriteStream('/data/contacts/google.csv'))
+                //        .on('finish', function () {
+                //            fs.unlinkSync('/data/downloads/google.csv')
+                //        });
+
             });
     }
 

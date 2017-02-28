@@ -17,7 +17,7 @@ const profilePath = process.env.WEBDRIVER_HOST ? '/usr/profile' : __dirname + '/
 var webdriverServer = null;
 var seleniumControlServer = null;
 var client = null;
-var modules = ['google', 'google-contacts', 'google-timeline', 'linkedin', 'processes'];
+var modules = ['google', 'google-contacts', 'google-timeline', 'linkedin', 'linkedin-messages', 'processes'];
 var tabCache = [];
 var pipeCache = [];
 

@@ -58,6 +58,7 @@ VOLUME /usr/profile
 VOLUME /data/contacts
 VOLUME /data/downloads
 VOLUME /data/timeline
+VOLUME /data/conversations
 VOLUME /var/svn
 
 #CMD [ "npm", "start" ]
